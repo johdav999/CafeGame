@@ -13,11 +13,18 @@ const { mkdir } = require('node:fs/promises');
   try {
     for (const backend of ['webgl2', 'automatic']) {
       const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+      if (process.env.CAFE_DISABLE_WEBGPU === '1') {
+        // Emulate a browser without WebGPU; Chromium flags differ across releases.
+        await page.addInitScript(() => Object.defineProperty(navigator, 'gpu', { value: undefined, configurable: true }));
+      }
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(`${process.env.CAFE_URL || 'http://127.0.0.1:4173'}/?backend=${backend}`);
       await page.getByRole('button', { name: 'Brew espresso' }).waitFor();
       await page.waitForFunction(() => window.cafeState && !document.querySelector('[data-command="0"]').disabled, null, { timeout: 60000 });
+      if (process.env.CAFE_DISABLE_WEBGPU === '1') {
+        assert.match(await page.locator('#status').innerText(), /WebGL 2 renderer ready/);
+      }
       const initial = await page.locator('canvas').screenshot();
       await page.getByRole('button', { name: 'Brew espresso' }).click();
       await page.waitForFunction(() => window.cafeState.brewing > 0);

@@ -9,6 +9,8 @@ jobs:
   linux-setup:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
+    env:
+      CAFE_BUILD_JOBS: 4
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
