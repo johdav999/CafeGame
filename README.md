@@ -8,6 +8,9 @@ customer AI, placement, economy, persistence and production assets are future wo
 
 ## Run locally
 
+For Codex cloud tasks, see [cloud setup](docs/cloud.md). The setup command is
+`bash tools/cloud/setup.sh`; agent commands are documented in [AGENTS.md](AGENTS.md).
+
 Install Node.js 22+, CMake 3.24+, Ninja, Git, Python 3 and Emscripten **6.0.11**.
 Activate the SDK (`emsdk_env.bat` on Windows, `source emsdk_env.sh` on Unix), then:
 
