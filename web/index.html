@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CafeGame · Morning shift</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <main>
+    <header><span class="eyebrow">CAFEGAME / 3D SIMULATOR</span><h1>A little coffee.<br>A good morning.</h1><p>Build a place people come back to.</p></header>
+    <section class="game" aria-label="3D cafe"><canvas id="viewport" aria-label="Cafe scene"></canvas><p id="status" role="status">Starting WebEngine…</p></section>
+    <aside aria-label="Shift controls"><div><span class="eyebrow">YOUR FIRST SHIFT</span><h2>One espresso, please.</h2><p id="order">Brew a coffee, then serve your guest.</p></div><div class="stats"><span>Served <b id="served">0</b></span><span>Coins <b id="coins">0</b></span></div><div class="actions"><button data-command="0" disabled>Brew espresso</button><button data-command="1" disabled>Serve coffee</button><button data-command="2" disabled>Pause</button></div><small>Prototype · WebEngine browser runtime · <a href="?backend=webgl2">Use WebGL 2</a></small></aside>
+  </main><script src="host.js"></script><script src="cafe_game.js" onerror="engineStatus('Build the browser target before opening the game.',true)"></script>
+</body></html>

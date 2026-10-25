@@ -1,0 +1,14 @@
+{
+  "name": "cafe-game",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "configure": "emcmake cmake -S . -B build/browser -G Ninja -DCMAKE_BUILD_TYPE=Release",
+    "build": "cmake --build build/browser --target cafe_game -j 4",
+    "dev": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "assets": "node --env-file-if-exists=.env tools/assets.mjs"
+  }
+}
