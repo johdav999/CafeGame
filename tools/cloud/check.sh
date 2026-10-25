@@ -10,6 +10,8 @@ bash tools/cloud/run.sh cmake --build build/cloud/browser --target cafe_game -j 
 export CAFE_SITE_DIR="$repo_dir/build/cloud/browser/site"
 export PORT="${CAFE_TEST_PORT:-4183}"
 export CAFE_URL="http://127.0.0.1:$PORT"
+# Cloud runners have no guaranteed GPU. Exercise automatic WebGL fallback too.
+export CAFE_DISABLE_WEBGPU=1
 node tools/serve.mjs >build/cloud/server.log 2>&1 &
 server_pid=$!
 trap 'kill "$server_pid" 2>/dev/null || true; wait "$server_pid" 2>/dev/null || true' EXIT

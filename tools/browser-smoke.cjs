@@ -7,7 +7,8 @@ const { mkdir } = require('node:fs/promises');
   const browser = await chromium.launch({
     executablePath: process.env.BROWSER_EXECUTABLE || undefined,
     headless: true,
-    args: ['--no-proxy-server', '--enable-unsafe-webgpu', '--use-angle=swiftshader', '--enable-unsafe-swiftshader']
+    args: ['--no-proxy-server', '--enable-unsafe-webgpu', '--use-angle=swiftshader', '--enable-unsafe-swiftshader',
+      ...(process.env.CAFE_DISABLE_WEBGPU === '1' ? ['--disable-blink-features=WebGPU'] : [])]
   });
   try {
     for (const backend of ['webgl2', 'automatic']) {

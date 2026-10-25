@@ -47,9 +47,10 @@ supported browser/port forwarding; your Windows localhost is a different machine
 check.sh owns and stops its temporary test server on port 4183, configurable via
 CAFE_TEST_PORT. Screenshots land in build/evidence.
 
-Headless Chromium uses software rendering. The smoke check covers the rendered
+Headless Chromium uses software rendering with WebGPU disabled via CAFE_DISABLE_WEBGPU=1.
+The smoke check covers the rendered
 coffee, brewing, pause/resume, rewards and JavaScript errors on forced WebGL 2
-and automatic backend selection. It does not guarantee hardware WebGPU performance.
+and automatic WebGL fallback. It does not validate hardware WebGPU performance.
 
 ## Secrets
 
