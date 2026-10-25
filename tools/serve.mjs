@@ -13,4 +13,6 @@ const server = createServer(async (req, res) => {
     res.end(await readFile(path));
   } catch { res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found. Run npm run configure and npm run build first.'); }
 });
-server.listen(4173, '127.0.0.1', () => console.log('CafeGame: http://localhost:4173'));
+const port = Number(process.env.PORT || 4173);
+server.on('error', error => { console.error(`Cannot start CafeGame server: ${error.message}`); process.exitCode = 1; });
+server.listen(port, '127.0.0.1', () => console.log(`CafeGame: http://localhost:${port}`));

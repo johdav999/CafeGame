@@ -58,3 +58,8 @@ g++ -std=c++20 -Isrc tests/simulation_test.cpp -o cafe-test
 CI runs these checks and compiles the real WebEngine browser target. Actual GPU rendering acceptance
 requires a browser with WebGPU or WebGL 2; a successful compile alone does not verify rendering.
 GitHub Actions uploads `cafe-game-browser`. Deployment is not enabled by this scaffold.
+
+Optional browser acceptance: with Playwright available and the dev server running, run
+`node tools/browser-smoke.cjs`. Set `BROWSER_EXECUTABLE` to Chrome/Edge if needed, and use
+`NODE_PATH` for an external Playwright installation. It checks rendered coffee, pause/resume
+and serving on forced WebGL 2 and automatic backend selection, saving screenshots in `build/evidence/`.

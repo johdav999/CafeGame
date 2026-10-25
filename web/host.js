@@ -1,7 +1,8 @@
 const buttons = [...document.querySelectorAll('[data-command]')];
 window.engineStatus = (text, error) => {
   document.getElementById('status').textContent = text;
-  if (error) { window.cafeHostError = text; buttons.forEach(button => button.disabled = true); }
+  window.cafeHostError = error ? text : null;
+  if (error) buttons.forEach(button => button.disabled = true);
 };
 window.engineStats = () => {};
 window.enginePerformance = () => {};
