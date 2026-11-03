@@ -1,0 +1,45 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+(async()=>{
+ const executablePath=process.env.BROWSER_EXECUTABLE||['C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','C:/Program Files/Google/Chrome/Application/chrome.exe'].find(p=>fs.existsSync(p));
+ const browser=await chromium.launch({executablePath,headless:true,args:['--no-proxy-server']});
+ try{for(const backend of ['webgl2','automatic']){
+  const page=await browser.newPage({viewport:{width:1440,height:1000},hasTouch:true}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  const wait=fn=>page.waitForFunction(fn,null,{timeout:90000});
+  await page.goto(`${process.env.CAFE_URL||'http://127.0.0.1:4173'}/?backend=${backend}`);
+  await wait(()=>window.cafeAssetsReady);
+  await page.evaluate(()=>Module._cafe_scenario(4));
+  await wait(()=>window.cafeLayoutState.closed && !window.cafeMenuState.tickets.length);
+  await page.evaluate(()=>Module._cafe_command(15));
+  await wait(()=>!window.cafeLayoutState.closed);
+  await page.evaluate(()=>{Module._cafe_guest(1,3,4);Module._cafe_guest(1,0,-1);});
+  await wait(()=>window.cafeMenuState.tickets.length===2);
+  const [first,second]=await page.evaluate(()=>window.cafeMenuState.tickets.map(t=>t.guest));
+  const badge=id=>page.locator(`.customer-badge[data-guest="${id}"]`);
+  await badge(first).waitFor({state:'visible'});
+  await page.evaluate(()=>Module._cafe_command(2));await wait(()=>window.cafeState.paused);
+  await badge(first).click();
+  assert.equal(await page.evaluate(()=>window.cafeState.brewing>0 || window.cafeState.ready),false,'Paused clicks do not prepare');
+  await page.evaluate(()=>Module._cafe_command(2));await wait(()=>!window.cafeState.paused);
+  await badge(second).click();
+  await page.waitForTimeout(200);
+  assert.equal(await page.evaluate(()=>window.cafeMenuState.tickets.some(t=>t.service==='Preparing')),false,'Later guest cannot start a different order');
+  await badge(first).click();await wait(()=>window.cafeMenuState.tickets[0].service==='Preparing');
+  await badge(first).click();
+  await wait(()=>window.cafeState.ready && !document.querySelector('[data-command="1"]').disabled);
+  assert.equal(await page.evaluate(()=>window.cafeState.served),0,'Preparation clicks do not hand over early');
+  await page.evaluate(()=>Module._cafe_command(2));await wait(()=>window.cafeState.paused);
+  await badge(first).click();assert.equal(await page.evaluate(()=>window.cafeState.served),0,'Paused click cannot deliver');
+  await page.evaluate(()=>Module._cafe_command(2));await wait(()=>!window.cafeState.paused);
+  await badge(first).focus();await page.keyboard.press('Enter');
+  await wait(()=>window.cafeState.served===1);
+  await badge(second).tap();await wait(()=>window.cafeMenuState.tickets.some(t=>t.service==='Preparing'));
+  await wait(()=>window.cafeState.ready && !document.querySelector('[data-command="1"]').disabled);
+  await badge(second).tap();await wait(()=>window.cafeState.served===2);
+  assert.deepEqual(errors,[]);
+  console.log(`${backend}: takeaway badge prepares mixed orders and delivers by keyboard/touch; FIFO, pause and in-progress guards passed`);
+  await page.close();
+ }}finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

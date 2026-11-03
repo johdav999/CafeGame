@@ -1,0 +1,914 @@
+[
+  {
+    "name": "snake",
+    "id": 15,
+    "path": "models/cafe-plant-snake.glb",
+    "triangles": 2452,
+    "bytes": 164600,
+    "sha256": "e3480c14be7185b77b95206a754e958985cf03f0901943053515d622a3dc7213",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [],
+    "provider": "Tripo3D",
+    "task_id": "82a1604d-84af-42b2-a784-07ebe7ff06f4",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "snake",
+      "prompt": "Create a single isolated 3D game asset reference: a compact upright snake plant (Sansevieria), foliage only, NO pot or container. 7 broad thick sculpted leaves in a tight cluster, sage and forest green, subtle restrained green bands, no needlelike edges. Stems converge at one short compact base with NO roots exposed and NO soil clump. Warm Scandinavian cafe dollhouse art style, softly beveled chunky readable forms, matte materials, simple clean stylized botanical silhouette, not photorealistic. Full object visible centered with generous margin, three-quarter view slightly from above, neutral diffuse light without cast shadows, plain light gray background. No text, labels, ground, extra objects or multiple views. This will be converted to a standalone 3D model and inserted into a separate ceramic pot.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-36004247-5252-4682-b6d6-3a15fd54fbe2.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "92dcd6e681e22d7ee29088b8ce9754c206d2f2b303d7d5d6f4e59ff8c9a8b720",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "eb03c7f79fbae5e2feb4bb0fa03919d6744568f27d6f90bf46c69d19185c1e3e",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:38:11.113164+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 29024,
+        "triangles": 49050,
+        "non_manifold_edges": 8656
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 1227,
+        "triangles": 2452,
+        "non_manifold_edges": 0
+      },
+      "scale_factor": 0.6147151615818657,
+      "dimensions_gltf_xyz": [
+        0.3398222029209137,
+        0.6000000238418579,
+        0.4327084720134735
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.05,
+      "topology": [
+        {
+          "object": "tripo_node_82a1604d-84af-42b2-a784-07ebe7ff06f4",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.766301214694977E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.760618209838868E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_82a1604d-84af-42b2-a784-07ebe7ff06f4"
+      ],
+      "textures": [
+        {
+          "name": "Color_82a1604d-84af-42b2-a784-07ebe7ff06f4",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_82a1604d-84af-42b2-a784-07ebe7ff06f4",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_82a1604d-84af-42b2-a784-07ebe7ff06f4",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "92dcd6e681e22d7ee29088b8ce9754c206d2f2b303d7d5d6f4e59ff8c9a8b720",
+      "bytes": 8938064
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  },
+  {
+    "name": "rubber",
+    "id": 16,
+    "path": "models/cafe-plant-rubber.glb",
+    "triangles": 2468,
+    "bytes": 151140,
+    "sha256": "3052ddbf276ef56efbdd5e7077077c72fd0b10d89ef70ff6baa3a1089853849b",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [],
+    "provider": "Tripo3D",
+    "task_id": "1a6967de-4bd6-4366-a141-3bd9ba861999",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "rubber",
+      "prompt": "Single isolated 3D game asset reference of a small rubber plant (Ficus elastica), foliage only, NO pot, NO container, NO soil. One short sturdy central stem with seven broad oval thick rounded leaves growing in a compact upright crown; rich forest and sage green matte surfaces, minimal veins. Bottom stem tip visible and centered to insert into a separate flower pot. Warm Scandinavian cafe dollhouse style, softened chunky sculpted forms, botanical silhouette readable at game distance. Full plant centered in frame with generous margin, clear three-quarter view slightly above, neutral diffuse lighting, plain light gray background, no ground shadows. No text, labels, extra props, roots or multi-view sheet.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-55a135ee-f8bf-41c5-b24d-50fdf769e748.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "26b0dbb84cc4a761c82b539aae31b94890daebef296ef5879c045341d9f62206",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "475fdf87b05380f359ab10ae8de7788ca227fd324de8db1b8b373275074bc95e",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:38:34.829009+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 27799,
+        "triangles": 49382,
+        "non_manifold_edges": 6022
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 1236,
+        "triangles": 2468,
+        "non_manifold_edges": 0
+      },
+      "scale_factor": 0.562165617322838,
+      "dimensions_gltf_xyz": [
+        0.362508624792099,
+        0.550000011920929,
+        0.46845120191574097
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.05,
+      "topology": [
+        {
+          "object": "tripo_node_1a6967de-4bd6-4366-a141-3bd9ba861999",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.791779816150665E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.783593714237214E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_1a6967de-4bd6-4366-a141-3bd9ba861999"
+      ],
+      "textures": [
+        {
+          "name": "Color_1a6967de-4bd6-4366-a141-3bd9ba861999",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_1a6967de-4bd6-4366-a141-3bd9ba861999",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_1a6967de-4bd6-4366-a141-3bd9ba861999",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "26b0dbb84cc4a761c82b539aae31b94890daebef296ef5879c045341d9f62206",
+      "bytes": 8182332
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  },
+  {
+    "name": "jade",
+    "id": 17,
+    "path": "models/cafe-plant-jade.glb",
+    "triangles": 2364,
+    "bytes": 153516,
+    "sha256": "4b4630154be56ee7de069443deedc00714a6d06da07a71de32ef2ddbddc83303",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [],
+    "provider": "Tripo3D",
+    "task_id": "73c53c85-6ba8-47f2-b351-283e69f4c317",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "jade",
+      "prompt": "Single isolated 3D game asset reference: a compact jade succulent plant with three short thick branching stems and clusters of plump oval rounded fleshy leaves, sage green with deeper forest green centers. Foliage and stems only, NO POT, no soil, no roots. The stems join a single compact base to insert into a separate planter. Stylized warm Scandinavian cafe dollhouse prop, chunky softly rounded sculpted forms, matte finish, broad simple leaves, no tiny details. Full complete object, centered with generous margins, clear three-quarter view slightly from above, diffuse neutral light and plain light gray background. No labels, text, cast shadows, extra objects or multiple views.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-de76c0ae-5b09-4293-b865-a86ca3918818.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "75611d2e1f0336baa9bcc1451a59c2ee548d66c68337c7f14bd229ac487c231c",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "35275d187057306c516e55ccd9069ea5a5ef556d258b29adb63e56502aa82862",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:39:11.520511+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 27782,
+        "triangles": 47316,
+        "non_manifold_edges": 7926
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 1182,
+        "triangles": 2364,
+        "non_manifold_edges": 0
+      },
+      "scale_factor": 0.43907880080824735,
+      "dimensions_gltf_xyz": [
+        0.3765741288661957,
+        0.3799999952316284,
+        0.43254491686820984
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.05,
+      "topology": [
+        {
+          "object": "tripo_node_73c53c85-6ba8-47f2-b351-283e69f4c317",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.801209270954132E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.85119104385376E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_73c53c85-6ba8-47f2-b351-283e69f4c317"
+      ],
+      "textures": [
+        {
+          "name": "Color_73c53c85-6ba8-47f2-b351-283e69f4c317",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_73c53c85-6ba8-47f2-b351-283e69f4c317",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_73c53c85-6ba8-47f2-b351-283e69f4c317",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "75611d2e1f0336baa9bcc1451a59c2ee548d66c68337c7f14bd229ac487c231c",
+      "bytes": 7291560
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  },
+  {
+    "name": "monstera",
+    "id": 18,
+    "path": "models/cafe-plant-monstera.glb",
+    "triangles": 2476,
+    "bytes": 150124,
+    "sha256": "3d13d0ffdd8df356de2fa51d7c585bf61f36ac9969ad34e8d014a68f26b3e46d",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [],
+    "provider": "Tripo3D",
+    "task_id": "a234417d-d790-4ae2-a61c-a8f66edb34a5",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "monstera",
+      "prompt": "A single isolated compact stylized monstera houseplant, foliage only with NO pot, soil or roots. Five broad chunky heart-shaped forest-green leaves, each with just two or three large edge splits, sculpted substantial thickness, supported by sturdy short sage-green stems converging at a small centered base. Leaf silhouette easily readable and structural for a small 3D game prop, no delicate tiny holes or thin filaments. Cozy Scandinavian cafe dollhouse style, matte materials, rounded forms. Complete subject seen at clear three-quarter angle slightly from above, centered with margins, neutral diffuse light, plain light gray backdrop. No text, labels, cast shadows, extra objects or multiple views.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-7f844585-0087-4e4b-beac-554d67fd2d59.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "f30c2eb7fa97d12ec9f44f68b5d48455cdfb7559b7558bc0251fe09227b8917d",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "1ed15dcc99beced4df035f53d88ffe83f8172d91e79af53f7277e2cc593a23a8",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:39:39.465045+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 28468,
+        "triangles": 49556,
+        "non_manifold_edges": 7132
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 1238,
+        "triangles": 2476,
+        "non_manifold_edges": 0
+      },
+      "scale_factor": 0.5894055841990888,
+      "dimensions_gltf_xyz": [
+        0.1888112872838974,
+        0.5,
+        0.5789523720741272
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.05,
+      "topology": [
+        {
+          "object": "tripo_node_a234417d-d790-4ae2-a61c-a8f66edb34a5",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.810289144515991E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.822648167610168E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_a234417d-d790-4ae2-a61c-a8f66edb34a5"
+      ],
+      "textures": [
+        {
+          "name": "Color_a234417d-d790-4ae2-a61c-a8f66edb34a5",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_a234417d-d790-4ae2-a61c-a8f66edb34a5",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_a234417d-d790-4ae2-a61c-a8f66edb34a5",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "f30c2eb7fa97d12ec9f44f68b5d48455cdfb7559b7558bc0251fe09227b8917d",
+      "bytes": 7946432
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  },
+  {
+    "name": "terracotta",
+    "id": 19,
+    "path": "models/cafe-pot-terracotta.glb",
+    "triangles": 1222,
+    "bytes": 104288,
+    "sha256": "995874474e81a1552945f16cc5615cb54e85aecc37aa1f9877069f5c3216ffa1",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [],
+    "provider": "Tripo3D",
+    "task_id": "4ab18b21-2ee9-49e6-be9d-47a41c06f35d",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "terracotta",
+      "prompt": "One isolated ceramic flower pot for a stylized Scandinavian cafe 3D game. Classic warm terracotta tapered round planter with a thick rounded rolled lip, slightly narrower flat base, simple matte fired clay in muted #C57656. Filled with a flat dark espresso-brown soil surface recessed just below the rim, NO plant, no leaves, no stems, no saucer, no decoration or text. Sturdy smooth softly beveled geometry, charming handcrafted form but no cracks or noise. Pot is roughly as wide as tall. Full subject centered with ample margins, clear three-quarter view slightly above showing the soil and rim, plain light gray background and neutral diffuse lighting, no cast shadow, single object, no multiview.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-bc541812-c0e4-4884-8f25-6b56bef17be6.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "5a9af6e7ab5b3af90578b494c1c94d847f39af2bda0bca775ccc5ab78ac3944e",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "b77e188858b3edfdc532b0f161c72b43b69e1d0b4cf752070dfdde1ef3fa83ca",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:40:05.845967+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 27176,
+        "triangles": 48926,
+        "non_manifold_edges": 5286
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 609,
+        "triangles": 1222,
+        "non_manifold_edges": 0
+      },
+      "scale_factor": 0.4446584052275599,
+      "dimensions_gltf_xyz": [
+        0.436847984790802,
+        0.3399999737739563,
+        0.4360601007938385
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.025,
+      "topology": [
+        {
+          "object": "tripo_node_4ab18b21-2ee9-49e6-be9d-47a41c06f35d",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.801311790943146E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.824350476264954E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_4ab18b21-2ee9-49e6-be9d-47a41c06f35d"
+      ],
+      "textures": [
+        {
+          "name": "Color_4ab18b21-2ee9-49e6-be9d-47a41c06f35d",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_4ab18b21-2ee9-49e6-be9d-47a41c06f35d",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_4ab18b21-2ee9-49e6-be9d-47a41c06f35d",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "5a9af6e7ab5b3af90578b494c1c94d847f39af2bda0bca775ccc5ab78ac3944e",
+      "bytes": 8093564
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  },
+  {
+    "name": "oat",
+    "id": 20,
+    "path": "models/cafe-pot-oat.glb",
+    "triangles": 1200,
+    "bytes": 101684,
+    "sha256": "5a00c4cc44d18baf353e5d48d6feb3c5a91e38842c0e16a3fe6ace2102783d96",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [],
+    "provider": "Tripo3D",
+    "task_id": "492ff4a5-6461-4072-b346-51c7dc2f8a92",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "oat",
+      "prompt": "One isolated ceramic planter for a cozy stylized Scandinavian cafe 3D game: a squat rounded bowl-shaped OAT CREAM pot, warm off-white #F3E9D2, wide belly and narrow flat foot, thick gently rounded rim. Subtle widely spaced vertical flutes sculpted into its body, matte handmade ceramic, smooth clean surface without noise. Filled with dark espresso-brown soil just below the rim. NO plant, stems, roots, saucer or extra objects. Full object centered with generous margin, clear three-quarter view from slightly above showing soil and rim, plain light gray background, neutral diffuse illumination, no cast shadow. No text or multiview.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-7efebb4a-f09f-4783-8a25-91c2a8278f02.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "3932d51e807819e32610571fefa58c190ac6849bac40c166608d37a2ee44d6b4",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "7d799e1d6593d4907cf6f9cab68d666a14c71c5e546fbf7ca8027469912d3bc9",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:41:08.323911+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 26513,
+        "triangles": 48006,
+        "non_manifold_edges": 4894
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 600,
+        "triangles": 1200,
+        "non_manifold_edges": 0
+      },
+      "scale_factor": 0.5258027274712437,
+      "dimensions_gltf_xyz": [
+        0.514643132686615,
+        0.3400000035762787,
+        0.5160456895828247
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.025,
+      "topology": [
+        {
+          "object": "tripo_node_492ff4a5-6461-4072-b346-51c7dc2f8a92",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.801881909370422E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 0,
+            "tolerance": 9.814435541629791E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_492ff4a5-6461-4072-b346-51c7dc2f8a92"
+      ],
+      "textures": [
+        {
+          "name": "Color_492ff4a5-6461-4072-b346-51c7dc2f8a92",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_492ff4a5-6461-4072-b346-51c7dc2f8a92",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_492ff4a5-6461-4072-b346-51c7dc2f8a92",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "3932d51e807819e32610571fefa58c190ac6849bac40c166608d37a2ee44d6b4",
+      "bytes": 6703112
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  },
+  {
+    "name": "sage",
+    "id": 21,
+    "path": "models/cafe-pot-sage.glb",
+    "triangles": 1224,
+    "bytes": 104520,
+    "sha256": "c2271baa2efc679c40740623cdc2e7e07fabab1d944528b46b7fb83995b5de43",
+    "texture_size": 512,
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "repairs": [
+      "Removed one inspected superfluous rim flap, area under 2e-6 square metres; no hole filling."
+    ],
+    "provider": "Tripo3D",
+    "task_id": "79f0f5a9-aeeb-446e-8752-7b1cc6cbcefb",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "sage",
+      "prompt": "One isolated sage-green ceramic planter for a warm stylized Scandinavian cafe dollhouse 3D game. Tall simple cylindrical flower pot with softly rounded vertical sides, gently thickened rounded rim and flat stable base, matte pale sage glaze #8FA58B. Height equals diameter. One subtle inset band near the base, no other ornament. Dark espresso-brown soil fills it to just below its rim. NO plants, stems, roots, saucer, stand or separate objects. Chunky clean sculpted form, soft bevels, restrained handcrafted material, no grime or scratches. Full complete pot centered with margins, clear three-quarter view slightly above, diffuse neutral lighting, plain light gray background with no cast shadows, no text, no multiview.",
+      "provider": "built-in ImageGen",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17df9-2ce2-71f0-8f0d-78e2177d73de\\exec-82ac0d9a-a247-4e3a-8cd8-d544342b40ba.png",
+      "date": "2026-10-28"
+    },
+    "source_sha256": "d88c321b1a980c356ac83338210d239ef5454f9db26a53d9a52cf67317f48f0a",
+    "cleanup": {
+      "source": "model.glb",
+      "source_sha256": "be9cd78905d58863d927054144510826ff60ad4b89ebf78362a997a5f21a4096",
+      "blender": "5.1.2",
+      "created_at": "2026-10-28T09:41:45.385607+01:00",
+      "before": {
+        "objects": 1,
+        "vertices": 27313,
+        "triangles": 49056,
+        "non_manifold_edges": 5418
+      },
+      "after": {
+        "objects": 1,
+        "vertices": 609,
+        "triangles": 1226,
+        "non_manifold_edges": 1
+      },
+      "scale_factor": 0.3992755570500503,
+      "dimensions_gltf_xyz": [
+        0.3913998007774353,
+        0.3400000035762787,
+        0.3907608687877655
+      ],
+      "merge_distance": 1E-06,
+      "decimate_ratio": 0.025,
+      "topology": [
+        {
+          "object": "tripo_node_79f0f5a9-aeeb-446e-8752-7b1cc6cbcefb",
+          "before_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 1,
+            "tolerance": 9.800971746444703E-09
+          },
+          "after_reduction": {
+            "seam_duplicates": 0,
+            "boundary_edges": 0,
+            "boundary_length": 0,
+            "non_manifold_edges": 1,
+            "tolerance": 9.802748560905457E-09
+          }
+        }
+      ],
+      "materials": [
+        "tripo_material_79f0f5a9-aeeb-446e-8752-7b1cc6cbcefb"
+      ],
+      "textures": [
+        {
+          "name": "Color_79f0f5a9-aeeb-446e-8752-7b1cc6cbcefb",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "NormalGL_79f0f5a9-aeeb-446e-8752-7b1cc6cbcefb",
+          "width": 4096,
+          "height": 4096
+        },
+        {
+          "name": "ORM_79f0f5a9-aeeb-446e-8752-7b1cc6cbcefb",
+          "width": 4096,
+          "height": 4096
+        }
+      ],
+      "warnings": [
+        "Visual/material/usage-rights review still required.",
+        "Non-manifold counts include intentionally split UV/normal seams.",
+        "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+        "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+      ],
+      "output_sha256": "d88c321b1a980c356ac83338210d239ef5454f9db26a53d9a52cf67317f48f0a",
+      "bytes": 8098404
+    },
+    "preparation": "Seams welded before reduction; width fitted to placement cell; embedded 512px JPEG textures; final export reimported with closed manifold surfaces.",
+    "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+    "visual_review": {
+      "date": "2026-10-28",
+      "browser_backends": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "blender_views": [
+        "front",
+        "rear",
+        "left",
+        "right",
+        "top",
+        "underside"
+      ],
+      "evidence": "build/evidence/plants",
+      "result": "Inspected final exported models; no unexplained gaps or flicker observed"
+    }
+  }
+]

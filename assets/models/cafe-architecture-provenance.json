@@ -1,0 +1,86 @@
+[
+  {
+    "name": "wall",
+    "path": "models/cafe-wall.glb",
+    "triangles": 45744,
+    "bytes": 1366904,
+    "sha256": "bf763f45015a024d012302737ee4328040f9720676e4c3cd0279af073beddfde",
+    "source_sha256": "96759b8fd3730079949ab75e57c7c204a178b1435410eae5b0eff42722537512",
+    "provider": "Tripo3D",
+    "task_id": "ebd5af08-b28b-426c-ada9-652ebe477d45",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "tool": "built-in ImageGen",
+      "prompt": "Use case: stylized-concept. Asset type: isolated 3D model reference for a warm Scandinavian caf\u00e9 dollhouse game. One complete straight modular interior wall panel, approximately 3 metres wide by 3 metres tall by 0.18 metres thick. A solid rectangular wall with warm oat plaster #F3E9D2 on upper two thirds, understated forest-green #243C32 paneled wainscoting on lower third, a simple narrow honey-oak cap rail and baseboard. Clean flat joining ends, full thickness, straight edges, softly beveled details. No window or door, no holes, no floating pieces. Front and right end visible in a clear three-quarter view, entire object comfortably framed, plain light grey background, neutral diffuse studio lighting. Stylized premium game art, matte surfaces, subtle plaster variation, broad readable shapes, very restrained grain. No floor platform, furniture, props, text, labels or cast dramatic shadows. One object only.",
+      "sources": [
+        "design.md"
+      ],
+      "intendedDimensionsMetres": [
+        3,
+        3,
+        0.18
+      ]
+    },
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "preparation": "Reviewed geometry and UVs retained; JPEG quality 90, 1024px textures; reimported closed surface.",
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  },
+  {
+    "name": "floor",
+    "path": "models/cafe-floor.glb",
+    "triangles": 3000,
+    "bytes": 333144,
+    "sha256": "efeffdd3030bc371c1bd209ae6708073b2216c17956aaaaa3b022dfc0a52b524",
+    "source_sha256": "f4fcba69fa902f576c122623b2a7a0b536b2efe9d0c23643ebc216da3335bf64",
+    "provider": "Tripo3D",
+    "task_id": "c315d657-391d-4059-8c62-bb225ec88158",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "tool": "built-in ImageGen",
+      "prompt": "Use case: stylized-concept. Asset type: isolated 3D model reference for a warm Scandinavian caf\u00e9 dollhouse game. One complete square modular floor slab, approximately 3 metres wide by 3 metres deep and 0.12 metres thick. Honey-oak #B98250 wood plank flooring with broad straight boards and staggered end joints. Flat solid continuous supporting slab beneath shallow plank grooves, no gaps passing through the floor. Perfectly straight square outer edges so multiple modules can meet, no raised perimeter border or skirting. Subtle warm grain, gently varied honey and oat wood tones, matte finish, softly beveled outer edge. Entire single slab visible in elevated three-quarter view showing top and two narrow solid side faces. Isolated on plain light grey background with neutral diffuse studio lighting, generous margin, premium stylized game art, readable broad geometry, no scratches or distress. No walls, furniture, plants, props, text, labels, diagrams, extra objects or dramatic shadows.",
+      "sources": [
+        "design.md"
+      ],
+      "intendedDimensionsMetres": [
+        3,
+        0.12,
+        3
+      ]
+    },
+    "topology": [
+      {
+        "boundary_edges": 0,
+        "non_manifold_edges": 0
+      }
+    ],
+    "preparation": "Reviewed geometry and UVs retained; JPEG quality 90, 1024px textures; reimported closed surface.",
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  }
+]

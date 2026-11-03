@@ -1,0 +1,126 @@
+{
+  "id": 23,
+  "path": "models/cafe-storage-shelves.glb",
+  "triangles": 7408,
+  "bytes": 554556,
+  "sha256": "7684c6910949101a4634162f294e8d7ad236fa79d47e0f671f9214f537ace71b",
+  "topology": [
+    {
+      "boundary_edges": 0,
+      "non_manifold_edges": 0
+    }
+  ],
+  "provider": "Tripo3D",
+  "task_id": "4942da49-7a3d-4c88-871e-e78ca1e0c49f",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 50000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  },
+  "reference_notes": {
+    "provider": "Built-in ImageGen",
+    "prompt": "Use case: stylized-concept. One complete isolated 3D game prop reference for a warm Scandinavian cafe dollhouse game: a compact freestanding cafe storage shelving unit, 1.6 metres high, 0.85 metres wide, 0.65 metres deep. Three sturdy honey-oak shelves within softly beveled forest-green side posts and a solid forest-green back panel, on a low plinth. Stocked neatly with several chunky sealed kraft coffee bags, two oat ceramic storage jars and folded cream linens, arranged with generous visible empty space between objects. No writing, logos or labels. Stylized matte materials, restrained subtle wood grain, rounded edges, simple strong silhouette readable from far away, no photorealistic surface noise. Entire unit and base visible in elevated front three-quarter view, centered with margin on plain light neutral background, soft diffuse neutral studio lighting. No room, people, extra furniture, watermark, transparent panels or floating parts.",
+    "source": "C:/Users/EJOHDAV/.codex/generated_images/01a17df9-2ce2-71f0-8f0d-78e2177d73de/exec-52b20bc6-ab0e-400b-9dd3-a01a610ff0c0.png",
+    "review": "Complete unit with three shelves, coffee bags, jars and linens; generated decorative plants accepted."
+  },
+  "cleanup": {
+    "source": "model.glb",
+    "source_sha256": "899cd0555e66c7922465326a7b2abaea3f55a25e44fef0d4c01e085d4304a54f",
+    "blender": "5.1.2",
+    "created_at": "2026-10-28T18:05:08.532453+01:00",
+    "before": {
+      "objects": 1,
+      "vertices": 29494,
+      "triangles": 41178,
+      "non_manifold_edges": 15844
+    },
+    "after": {
+      "objects": 1,
+      "vertices": 3687,
+      "triangles": 7412,
+      "non_manifold_edges": 16
+    },
+    "scale_factor": 1.6358352212424758,
+    "dimensions_gltf_xyz": [
+      0.5732536315917969,
+      1.5999999046325684,
+      1.1983197927474976
+    ],
+    "merge_distance": 1E-06,
+    "decimate_ratio": 0.18,
+    "topology": [
+      {
+        "object": "tripo_node_4942da49-7a3d-4c88-871e-e78ca1e0c49f",
+        "before_reduction": {
+          "seam_duplicates": 0,
+          "boundary_edges": 21,
+          "boundary_length": 0.08351689530536532,
+          "non_manifold_edges": 24,
+          "tolerance": 9.78847771883011E-09
+        },
+        "after_reduction": {
+          "seam_duplicates": 0,
+          "boundary_edges": 9,
+          "boundary_length": 0.07608202428673394,
+          "non_manifold_edges": 16,
+          "tolerance": 9.780936241149902E-09
+        }
+      }
+    ],
+    "materials": [
+      "tripo_material_4942da49-7a3d-4c88-871e-e78ca1e0c49f"
+    ],
+    "textures": [
+      {
+        "name": "Color_4942da49-7a3d-4c88-871e-e78ca1e0c49f",
+        "width": 4096,
+        "height": 4096
+      },
+      {
+        "name": "NormalGL_4942da49-7a3d-4c88-871e-e78ca1e0c49f",
+        "width": 4096,
+        "height": 4096
+      },
+      {
+        "name": "ORM_4942da49-7a3d-4c88-871e-e78ca1e0c49f",
+        "width": 4096,
+        "height": 4096
+      }
+    ],
+    "warnings": [
+      "Visual/material/usage-rights review still required.",
+      "Non-manifold counts include intentionally split UV/normal seams.",
+      "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+      "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+    ],
+    "output_sha256": "ee03d33cb4e38da2c1ace9ea7553a63ae8d8b67f00ca05111b49c95612eabe99",
+    "bytes": 6842656
+  },
+  "preparation": "Seam-welded before reduction; fitted to existing footprint, 1.6m tall; embedded 1024px JPEG textures; exact export reimported and checked.",
+  "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+  "repair": "Removed three inspected edge-sharing source flaps, one isolated triangle under 1e-6 square metres, and loose edges. No hole filling.",
+  "visual_review": {
+    "views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top",
+      "underside"
+    ],
+    "backends": [
+      "WebGL 2",
+      "WebGPU"
+    ],
+    "evidence": "build/evidence/storage-shelves/report.json",
+    "date": "2026-10-28",
+    "result": "Reviewed final surfaces, fixed storeroom pair and four upgrade rotations; no unexplained gaps or flicker observed. Some close-up faceting from reduction remains."
+  }
+}

@@ -1,0 +1,102 @@
+/* Fit the visible browser area without changing canvas coordinates or touch targets. */
+:root {
+  --game-safe-top:env(safe-area-inset-top,0px);
+  --game-safe-right:env(safe-area-inset-right,0px);
+  --game-safe-bottom:env(safe-area-inset-bottom,0px);
+  --game-safe-left:env(safe-area-inset-left,0px);
+}
+body.playable { margin:0; overflow:hidden; }
+.playable #play-shell {
+  box-sizing:border-box;
+  width:100%;
+  height:var(--game-height,100dvh);
+  min-height:0;
+  padding:var(--game-safe-top) var(--game-safe-right) var(--game-safe-bottom) var(--game-safe-left);
+}
+.playable .play-world,.playable #world-slot { min-width:0; min-height:0; }
+/* Compact artwork and text; retain a 44px touch target for every state. */
+:root:is([data-device=phone],[data-device=tablet]) .playable .customer-badge {
+  width:72px; height:44px; min-width:44px; min-height:44px; padding:3px 5px; gap:2px;
+}
+:root:is([data-device=phone],[data-device=tablet]) .customer-badge strong { font-size:11px; }
+:root:is([data-device=phone],[data-device=tablet]) .customer-badge .badge-order { gap:2px; }
+:root:is([data-device=phone],[data-device=tablet]) .customer-badge .badge-order .service-icon { width:16px; height:16px; }
+:root:is([data-device=phone],[data-device=tablet]) .customer-badge.waiting-service { grid-template-columns:22px auto; column-gap:3px; }
+:root:is([data-device=phone],[data-device=tablet]) .customer-badge.waiting-service .badge-order .service-icon { width:22px; height:22px; }
+:root:is([data-device=phone],[data-device=tablet]) .customer-badge.waiting-service strong { font-size:14px; }
+/* The mobile service drawer is an action rail; guest badges carry the orders. */
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view> :not(.service-action-panel,.preparation-choices,.serving-choices) { display:none; }
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view :is(#next-reason,#brew-progress,#service-care-status) { display:none; }
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view .service-action-panel {
+  position:static; margin:0!important; padding:0; border:0; background:none; box-shadow:none;
+}
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view :is(.actions,.service-actions,.service-context-actions,.preparation-choices,.serving-choices) {
+  display:grid; grid-template-columns:minmax(0,1fr); gap:6px; min-width:0;
+}
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view :is(.service-action-panel,.preparation-choices,.serving-choices):not(:empty) { margin-bottom:6px!important; }
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view button {
+  box-sizing:border-box; width:100%; min-width:0; max-width:100%; min-height:44px;
+  padding:8px 5px; font-size:12px; line-height:1.3; white-space:normal; overflow-wrap:anywhere;
+}
+:root:is([data-device=phone],[data-device=tablet]) .playable #serve-view button .service-icon { width:20px; height:20px; flex-shrink:0; }
+#landscape-prompt[hidden] { display:none; }
+#landscape-prompt {
+  position:fixed; inset:0; z-index:20000; display:grid; place-items:center;
+  overflow:auto; padding:24px; background:#243c32ed; color:#302b25;
+}
+#landscape-prompt>div { max-width:360px; padding:24px; border-radius:16px; background:#f3e9d2; }
+#landscape-prompt h2 { font:1.6rem Georgia,serif; }
+#landscape-prompt p { line-height:1.5; }
+#landscape-prompt button { display:block; width:100%; min-height:44px; margin-top:12px; }
+@media (max-width:650px) and (orientation:portrait) {
+  .playable #play-shell { grid-template-rows:76px minmax(0,1fr) 70px; gap:4px; }
+  .playable .play-world { grid-template-rows:minmax(0,45%) minmax(0,1fr); }
+}
+@media (orientation:landscape) and (max-height:600px) {
+  .playable #play-shell { display:block; }
+  .playable .play-world { height:100%; grid-template-columns:minmax(0,1fr) minmax(220px,30%); grid-template-rows:minmax(0,1fr); gap:0; padding:0; }
+  .playable .play-heading { position:absolute; inset:max(4px,var(--game-safe-top)) max(8px,var(--game-safe-right)) auto max(8px,var(--game-safe-left)); gap:4px; }
+  .playable .shift-capsule { min-height:44px; padding:2px 8px; gap:4px; border-radius:12px; }
+  .playable .play-heading h1 { font-size:1em; margin:0; }
+  .playable .play-heading p { display:none; }
+  .playable #shift-icon { display:none; }
+  .playable #hud-pause { padding-left:4px; }
+  .playable #hud-pause button { width:44px; height:44px; }
+  .playable #hud-stats { min-height:44px; min-width:80px; padding:0 8px; border-radius:12px; }
+  .playable #hud-stats .stats b { font-size:22px; }
+  .playable #hud-stats .illustrated-icon { width:30px; height:30px; }
+  .playable #play-drawer { margin:58px 4px 4px; padding:8px; min-height:0; }
+  .playable #serve-view>h2 { font-size:1.15em; margin-bottom:8px; }
+  .playable .mode-nav { position:absolute; width:auto; left:calc((100% - max(220px,30%)) / 2); bottom:max(4px,var(--game-safe-bottom)); transform:translateX(-50%); padding:2px; gap:2px; }
+  .playable .mode-nav button { min-width:64px; min-height:44px; padding:4px 8px; font-size:.85em; flex-wrap:nowrap; }
+  .playable .mode-nav button>.service-icon { width:22px; height:22px; margin:0; }
+  .playable #morning-summary { display:none; }
+  .playable #status { left:8px; bottom:54px; max-width:calc(100% - 16px); }
+}
+/* Give mobile landscape players more room to see the cafe. */
+@media (orientation:landscape) {
+  :root:is([data-device=phone],[data-device=tablet]) .playable {
+    --landscape-menu-width:max(150px,calc(159px * var(--ui-scale,1)));
+    --landscape-right-padding:24px;
+  }
+  :root:is([data-device=phone],[data-device=tablet]) .playable .play-world {
+    grid-template-columns:minmax(0,1fr) var(--landscape-menu-width);
+    grid-template-rows:minmax(0,1fr);
+  }
+  :root:is([data-device=phone],[data-device=tablet]) .playable .mode-nav {
+    left:calc((100% - var(--landscape-menu-width) - var(--landscape-right-padding)) / 2);
+  }
+  :root:is([data-device=phone],[data-device=tablet]) .playable :is(#morning-summary,#status) { display:none; }
+}
+@media (orientation:landscape) and (max-width:900px) {
+  :root:is([data-device=phone],[data-device=tablet]) .playable {
+    --landscape-menu-width:150px;
+    --landscape-right-padding:12px;
+  }
+}
+@media (orientation:landscape) and (max-height:600px) {
+  :root:is([data-device=phone],[data-device=tablet]) .playable {
+    --landscape-menu-width:max(110px,15%);
+    --landscape-right-padding:0px;
+  }
+}

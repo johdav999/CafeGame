@@ -1,0 +1,10 @@
+{
+  "provider": "OpenAI ImageGen built-in tool",
+  "date": "2026-10-30",
+  "asset": "menu-cafe.webp",
+  "source": "C:/Users/EJOHDAV/.codex/generated_images/01a18ba7-639b-75e1-bc4c-a3a4c2f9053d/exec-d172798c-9321-4de6-9cb9-5fa8d47b5d5e.png",
+  "dimensions": [768, 512],
+  "processing": "Lanczos resize from 1536x1024; WebP quality 85, method 6. No procedural artwork.",
+  "prompt": "Use case: stylized-concept. Asset type: production sidebar header illustration for a cozy Scandinavian café management game. Create a wide landscape editorial illustration, approximately 3:2 aspect ratio, of an inviting miniature neighborhood café: forest green espresso machine, oat ceramic cup with delicate steam, golden croissant on oak counter, leafy plant, tall sunlit window. Handcrafted matte 3D dollhouse style with softly beveled forms and restrained detail. Palette forest #243C32, oat #F3E9D2, honey oak #B98250, warm brass #D7AC5B, sage #8FA58B. Soft morning sunlight, refined warm paper atmosphere. Composition: small cohesive café still life concentrated toward right two-thirds, calm light oat negative space at left; artwork will crop to a wide banner. No people, no lettering, no text, no logos, no watermark. High quality clean readable silhouettes.",
+  "existing_icons": "Existing reviewed ImageGen icons from assets/ui/provenance.json are reused for section headings and save controls."
+}

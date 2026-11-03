@@ -1,0 +1,50 @@
+// Exercise imported skinning, clip transitions and game-clock pause in both renderers.
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+(async()=>{
+ await fs.mkdir('build/evidence',{recursive:true});
+ const browser=await chromium.launch({executablePath:process.env.BROWSER_EXECUTABLE||undefined,headless:true,args:['--no-proxy-server',...(process.env.CAFE_SOFTWARE_RENDERING==='1'?['--use-angle=swiftshader','--enable-unsafe-swiftshader']:[])]});
+ const reports=[];
+ try {for(const backend of ['webgl2','automatic']) {
+  const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  page.on('console',m=>{if(m.type()==='error')console.error(m.text());});
+  console.log(`Opening ${backend}`);
+  await page.goto(`${process.env.CAFE_URL||'http://127.0.0.1:4173'}/?backend=${backend}`);
+  console.log(`Loaded ${backend}`);
+  await page.waitForFunction(()=>window.cafeAssetsReady && window.cafeRenderMeasurements?.frames>30,null,{timeout:90000}).catch(async e=>{console.error(await page.evaluate(()=>({assets:window.cafeAssetState,staff:window.cafeStaffAnimations,error:window.cafeHostError,status:document.querySelector('#status')?.textContent})));throw e;});
+  const assets=await page.evaluate(()=>window.cafeAssetState);
+  assert.deepEqual(assets.failures,[]);assert.equal(assets.models,25);
+  await page.waitForFunction(()=>window.cafeStaffAnimations?.length);
+  await page.evaluate(()=>Module._cafe_scenario(2));
+  await page.waitForFunction(()=>window.cafeDiagnosticState.stock===100 && window.cafeStaffAnimations[0]?.clip==='Idle');
+  await page.evaluate(()=>{Module._cafe_camera(1,.7,.55);Module._cafe_camera(2,0,-2);Module._cafe_camera(3,-3.8,0);});
+  const sample=()=>page.evaluate(()=>window.cafeStaffAnimations[0]);
+  const idle=await sample();
+  await page.waitForFunction(t=>window.cafeStaffAnimations[0].time!==t,idle.time);
+  assert.ok((await sample()).poseRevision>idle.poseRevision);
+  await page.locator('#viewport').screenshot({path:`build/evidence/barista-idle-${backend}.png`});
+  await page.evaluate(()=>Module._cafe_command(0));
+  await page.waitForFunction(()=>window.cafeStaffAnimations[0]?.clip==='Walking');
+  const walking=await sample();
+  await page.waitForFunction(s=>{const a=window.cafeStaffAnimations[0];return a.clip==='Walking' && Math.hypot(a.x-s.x,a.z-s.z)>.15 && a.time>.3;},walking);
+  await page.evaluate(()=>Module._cafe_command(2));
+  await page.waitForFunction(()=>window.cafeState.paused);
+  const paused=await sample();
+  await page.locator('#viewport').screenshot({path:`build/evidence/barista-walking-${backend}.png`});
+  await page.waitForTimeout(350);
+  const still=await sample();
+  assert.equal(still.time,paused.time);assert.equal(still.x,paused.x);assert.equal(still.z,paused.z);
+  await page.evaluate(()=>Module._cafe_command(2));
+  await page.waitForFunction(()=>window.cafeStaffAnimations[0]?.clip==='Idle',null,{timeout:30000});
+  const arrived=await sample();assert.ok(Math.hypot(arrived.x-idle.x,arrived.z-idle.z)>.5);
+  await page.waitForFunction(t=>window.cafeStaffAnimations[0].time!==t,arrived.time);
+  const rejected=await page.evaluate(()=>{const p=Module._malloc(16);try{HEAPU8.fill(0,p,p+16);return Module._cafe_model(4,p,16);}finally{Module._free(p);}});
+  assert.equal(rejected,0);assert.equal((await sample()).clip,'Idle');
+  assert.deepEqual(errors,[]);
+  reports.push({backend,status:await page.locator('#status').textContent(),assets,idle,walking,paused,arrived,errors});
+  await page.close();
+ }}finally {await browser.close();await fs.writeFile('build/evidence/barista-browser.json',JSON.stringify(reports,null,2));}
+ console.log(JSON.stringify(reports,null,2));
+})().catch(e=>{console.error(e);process.exitCode=1;});

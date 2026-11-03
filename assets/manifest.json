@@ -1,6 +1,250 @@
 {
-  "version": 1,
-  "models": [],
-  "audio": [],
-  "note": "Only approved local assets belong here. Generated drafts live in assets/generated and are ignored."
+  "version": 2,
+  "models": [
+    {
+      "id": 0,
+      "path": "models/cafe-coffee-machine.glb",
+      "approval": "user-approved-tripo-integration-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 1,
+      "path": "models/Guest-animated.glb",
+      "approval": "user-approved-tripo-mixamo-integration-2026-10-27",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 2,
+      "path": "models/neighbor-seated.glb",
+      "approval": "original-local-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 3,
+      "path": "models/neighbor-working.glb",
+      "approval": "original-local-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 4,
+      "path": "models/Barista-animated.glb",
+      "approval": "user-approved-animated-barista-integration-2026-10-27",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 5,
+      "path": "models/cafe-espresso-cup.glb",
+      "approval": "user-approved-tripo-integration-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 6,
+      "path": "models/cafe-counter-straight.glb",
+      "approval": "user-approved-tripo-integration-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 7,
+      "path": "models/cafe-counter-corner.glb",
+      "approval": "user-approved-tripo-integration-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 8,
+      "path": "models/cafe-table.glb",
+      "approval": "user-approved-tripo-integration-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 9,
+      "path": "models/cafe-chair.glb",
+      "approval": "user-approved-tripo-integration-2026-10-26",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 10,
+      "path": "models/cafe-wall.glb",
+      "approval": "user-approved-tripo-integration-2026-10-27",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 11,
+      "path": "models/cafe-floor.glb",
+      "approval": "user-approved-tripo-integration-2026-10-27",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 12,
+      "path": "models/Guest-sage-animated.glb",
+      "approval": "user-requested-tripo-mixamo-guests-2026-10-27",
+      "fallback": "original animated guest, then engine primitives"
+    },
+    {
+      "id": 13,
+      "path": "models/Guest-forest-animated.glb",
+      "approval": "user-requested-tripo-mixamo-guests-2026-10-27",
+      "fallback": "original animated guest, then engine primitives"
+    },
+    {
+      "id": 14,
+      "path": "models/Guest-oat-animated.glb",
+      "approval": "user-requested-tripo-mixamo-guests-2026-10-27",
+      "fallback": "original animated guest, then engine primitives"
+    },
+    {
+      "id": 15,
+      "path": "models/cafe-plant-snake.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 16,
+      "path": "models/cafe-plant-rubber.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 17,
+      "path": "models/cafe-plant-jade.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 18,
+      "path": "models/cafe-plant-monstera.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 19,
+      "path": "models/cafe-pot-terracotta.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 20,
+      "path": "models/cafe-pot-oat.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 21,
+      "path": "models/cafe-pot-sage.glb",
+      "approval": "user-requested-tripo-plants-and-pots-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 22,
+      "path": "models/cafe-pastry-display.glb",
+      "approval": "user-requested-tripo-pastry-display-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 23,
+      "path": "models/cafe-storage-shelves.glb",
+      "approval": "user-requested-tripo-storage-shelves-2026-10-28",
+      "fallback": "engine primitives"
+    },
+    {
+      "id": 24,
+      "path": "models/cafe-window-wall.glb",
+      "approval": "user-requested-tripo-window-wall-2026-10-28",
+      "provenance": "models/cafe-window-wall-provenance.json",
+      "fallback": "existing wall and window primitives"
+    }
+  ],
+  "audio": [
+    {
+      "id": 0,
+      "path": "audio/brew.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 1,
+      "path": "audio/cup.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 2,
+      "path": "audio/door.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 3,
+      "path": "audio/cafe-background.wav",
+      "sampleRate": 16000,
+      "approval": "user-supplied-and-requested-integration-2026-10-28",
+      "provenance": "audio/cafe-background-provenance.json"
+    },
+    {
+      "id": 4,
+      "path": "audio/grinder.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 5,
+      "path": "audio/steam.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 6,
+      "path": "audio/payment.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 7,
+      "path": "audio/ready.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 8,
+      "path": "audio/pour.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 9,
+      "path": "audio/pastry.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 10,
+      "path": "audio/clean.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 11,
+      "path": "audio/ui.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+      "provenance": "audio/elevenlabs-provenance.json"
+    },
+    {
+      "id": 12,
+      "path": "audio/appeal.wav",
+      "sampleRate": 16000,
+      "approval": "user-requested-elevenlabs-attractiveness-sound-2026-10-29",
+      "provenance": "audio/elevenlabs-provenance.json"
+    }
+  ],
+  "provenance": "provenance.md"
 }

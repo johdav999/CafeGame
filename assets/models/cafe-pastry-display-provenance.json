@@ -1,0 +1,127 @@
+{
+  "id": 22,
+  "path": "models/cafe-pastry-display.glb",
+  "triangles": 4474,
+  "bytes": 466920,
+  "sha256": "946ed3a41489342b4d029524779bc569701607c608465e30ea60b962efed80b6",
+  "topology": [
+    {
+      "boundary_edges": 0,
+      "non_manifold_edges": 0
+    }
+  ],
+  "provider": "Tripo3D",
+  "task_id": "c7d64e78-2ff3-447b-a3cf-345de93ddba9",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 50000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  },
+  "reference_notes": {
+    "provider": "Built-in ImageGen",
+    "prompt": "Use case: stylized-concept. Create one isolated 3D game prop reference: a compact countertop pastry display for a warm Scandinavian cafe dollhouse game. A complete low, wide two-tier open-front pastry display cabinet with softly rounded honey-oak base and side supports, forest-green back panel, restrained warm brass shelf lip, two oat ceramic serving trays holding six clearly recognizable golden croissants and cinnamon buns. Open front and open sides, NO glass panels, no transparent surfaces, no text or signs. Approximate proportions width 0.85 metres, depth 0.5 metres, height 0.55 metres. Chunky clean forms and medium detail readable at gameplay distance, subtle matte materials, no dense surface noise. Entire connected display including pastries visible, elevated front three-quarter view, centered with generous margin on plain light neutral background, diffuse studio lighting, no other objects, no floor scenery, no watermark.",
+    "source": "C:/Users/EJOHDAV/.codex/generated_images/01a17df9-2ce2-71f0-8f0d-78e2177d73de/exec-4b1a8523-a09a-4ba5-96ba-dff184551291.png",
+    "review": "Complete display, two trays and six pastries visible; accepted reference."
+  },
+  "cleanup": {
+    "source": "model.glb",
+    "source_sha256": "e60e6d5fce5dcc05f483976d4f620c504b06cd1a8f2d51d215b4d178daa079b0",
+    "blender": "5.1.2",
+    "created_at": "2026-10-28T17:35:49.232811+01:00",
+    "before": {
+      "objects": 1,
+      "vertices": 29357,
+      "triangles": 44812,
+      "non_manifold_edges": 12626
+    },
+    "after": {
+      "objects": 1,
+      "vertices": 2233,
+      "triangles": 4480,
+      "non_manifold_edges": 18
+    },
+    "scale_factor": 0.9291230800491453,
+    "dimensions_gltf_xyz": [
+      0.5279698371887207,
+      0.550000011920929,
+      0.909359872341156
+    ],
+    "merge_distance": 1E-06,
+    "decimate_ratio": 0.1,
+    "topology": [
+      {
+        "object": "tripo_node_c7d64e78-2ff3-447b-a3cf-345de93ddba9",
+        "before_reduction": {
+          "seam_duplicates": 0,
+          "boundary_edges": 12,
+          "boundary_length": 0.09757585465558805,
+          "non_manifold_edges": 18,
+          "tolerance": 9.793752133846284E-09
+        },
+        "after_reduction": {
+          "seam_duplicates": 0,
+          "boundary_edges": 12,
+          "boundary_length": 0.09757585465558805,
+          "non_manifold_edges": 18,
+          "tolerance": 9.787290990352631E-09
+        }
+      }
+    ],
+    "materials": [
+      "tripo_material_c7d64e78-2ff3-447b-a3cf-345de93ddba9"
+    ],
+    "textures": [
+      {
+        "name": "Color_c7d64e78-2ff3-447b-a3cf-345de93ddba9",
+        "width": 4096,
+        "height": 4096
+      },
+      {
+        "name": "NormalGL_c7d64e78-2ff3-447b-a3cf-345de93ddba9",
+        "width": 4096,
+        "height": 4096
+      },
+      {
+        "name": "ORM_c7d64e78-2ff3-447b-a3cf-345de93ddba9",
+        "width": 4096,
+        "height": 4096
+      }
+    ],
+    "warnings": [
+      "Visual/material/usage-rights review still required.",
+      "Non-manifold counts include intentionally split UV/normal seams.",
+      "Open boundaries are reported, not automatically filled; hidden parts are not guessed.",
+      "Topology metrics are not visual acceptance. Reimport the final optimized export and inspect all sides in the target renderer."
+    ],
+    "output_sha256": "bca72d9cd67b206abb0dcb81f36597fda37bfb93f40447f76a23d4521753d51b",
+    "bytes": 9742792
+  },
+  "preparation": "Seam-welded before reduction; 0.55m height, 1024px JPEG textures; exact export reimported and checked.",
+  "rights": "Account entitlement not independently verified; generation and integration requested by owner.",
+  "repair": "Removed six inspected superfluous source flaps, each below 0.00011 square metres, sharing an edge with two legitimate faces. No hole filling.",
+  "shading": "Recomputed smooth geometric normals; omitted source tangent-space normal map for compact delivery; PBR base color and roughness retained. Some close-up faceting remains from geometry reduction.",
+  "visual_review": {
+    "date": "2026-10-28",
+    "result": "Reviewed final surfaces and counter placement; no unexplained gaps or flicker observed; modest faceting retained at close range",
+    "views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top",
+      "underside"
+    ],
+    "backends": [
+      "WebGL 2",
+      "WebGPU"
+    ],
+    "evidence": "build/evidence/pastry-display-browser.json"
+  }
+}

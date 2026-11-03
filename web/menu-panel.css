@@ -1,0 +1,59 @@
+/* All artwork is ImageGen raster art; CSS supplies layout and interaction only. */
+.playable #menu-view{font-size:calc(16px * var(--ui-scale,1));color:#302b25;min-width:0}
+.playable #menu-view [hidden]{display:none!important}
+.menu-welcome{padding:0!important;display:block!important;position:relative;overflow:hidden;border-radius:12px;background:#f3e9d2;margin:0 0 16px!important}
+.menu-banner{display:block;width:100%;height:146px;object-fit:cover;object-position:center 56%}
+.menu-welcome-copy{padding:16px 12px 8px}
+.playable #menu-view .menu-welcome h2{font:28px/1.2 Georgia,serif;margin:6px 0 8px;letter-spacing:-.025em}
+.playable #menu-view .eyebrow{color:#52614b;font-size:11px;letter-spacing:.14em;font-weight:700}
+.playable #menu-view p{font-size:14px;line-height:1.6}
+.playable #menu-view .menu-welcome p{margin:0;color:#615743}
+.menu-save{padding:12px;border:1px solid #d4c9b4;border-radius:12px;background:#fff8e9}
+.menu-save-actions{display:grid!important;grid-template-columns:1fr 1fr}
+.playable #menu-view button{min-height:44px;font-size:14px;line-height:1.4;white-space:normal;padding:10px 12px}
+.playable #menu-view .menu-save-actions button{display:flex;justify-content:center;align-items:center;gap:6px}
+.menu-save-actions .imagegen-icon{width:23px;height:23px}
+.playable #menu-view [data-command="3"]{border-image:url('assets/ui/button.webp') 70 fill / 13px / 0 stretch;color:#fff4df}
+.playable #menu-view #save-status{font-size:12px;margin:8px 2px 0;min-height:1.6em;color:#5c5546}
+.menu-jumps{display:flex;flex-wrap:wrap;gap:6px;padding:16px 0;margin:0;border-bottom:1px solid #d4c9b4}
+.menu-jumps a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;background:#eee3cc;color:#243c32;border:1px solid #cabb9e;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none}
+.menu-jumps a:hover{background:#e1d5bb}
+.menu-jumps a:focus-visible,.playable #menu-view summary:focus-visible{outline:3px solid #b77928;outline-offset:3px}
+.menu-section{padding:20px 0 4px;scroll-margin-top:12px;min-width:0}
+.menu-section-heading{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.menu-section-heading>.imagegen-icon{width:40px;height:40px}
+.menu-section-heading h3{font:23px/1.25 Georgia,serif;margin:0;color:#243c32}
+.menu-section-heading h3:focus{outline:none}
+.menu-section-heading h3:focus-visible{outline:2px solid #b77928;outline-offset:4px}
+.playable #menu-view .menu-section-heading p{margin:4px 0 0;color:#615743;font-size:13px}
+.playable #menu-view .campaign-heading h2{font:18px/1.3 Georgia,serif;margin:8px 0}
+.playable #menu-view .campaign-heading{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.playable #menu-view #campaign-clock{font-size:14px}
+.playable #menu-view details{margin:8px 0!important}
+.playable #menu-view summary{font-size:14px;min-height:48px;line-height:1.5}
+.playable #menu-view summary>.imagegen-icon{width:25px;height:25px;vertical-align:middle;margin-right:8px}
+.playable #menu-view .menu-section>details{border:1px solid #d4c9b4!important;border-radius:12px!important;padding:0 12px 4px!important;background:#fff7e5}
+.playable #menu-view .menu-day-actions{display:grid;grid-template-columns:1fr;gap:8px}
+.playable #menu-view .menu-restart{margin-top:16px!important}
+.playable #menu-view .menu-restart button{margin:4px 6px 6px 0}
+.playable #menu-view .menu-restart p,.playable #menu-view .menu-help p,.playable #menu-view small{font-size:13px;line-height:1.6}
+.playable #menu-view .menu-help>summary{font-weight:500;color:#5c5546;font-size:13px}
+.playable #menu-view fieldset{min-width:0;padding:12px;margin:16px 0;border:1px solid #d4c9b4;border-radius:8px}
+.playable #menu-view legend{font:18px Georgia,serif;padding:0 6px;color:#243c32}
+.playable #menu-view fieldset label{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;margin:4px 0;font-size:14px}
+.playable #menu-view fieldset label:has(input[type=checkbox]){justify-content:flex-start}
+.playable #menu-view input[type=range]{min-width:0;width:55%;accent-color:#243c32;min-height:44px}
+.playable #menu-view input[type=checkbox]{width:20px;height:20px;accent-color:#243c32;flex-shrink:0}
+.playable #menu-view select{min-height:44px;max-width:100%;font-size:14px}
+.playable #menu-view #staff-cards article{padding:12px;border-radius:8px;border:1px solid #d4c9b4;background:#f3e9d2}
+.playable #menu-view .staff-priorities{gap:8px}
+.playable #menu-view #ledger{padding-left:22px;font-size:14px;line-height:1.6}
+.playable #menu-view #ledger li{padding:6px 0;border-bottom:1px solid #d4c9b4}
+.playable #menu-view :is(p,li,small){overflow-wrap:anywhere}
+.playable #menu-view button:disabled{color:#6a6253;filter:saturate(.3);opacity:.7;cursor:not-allowed}
+.playable #menu-view :is(p,button,summary,select,fieldset label,#campaign-clock,#ledger){font-size:.875em}
+.playable #menu-view :is(small,.menu-help p,.menu-help>summary,.menu-section-heading p){font-size:.8125em}
+.playable #menu-view #save-status{font-size:.75em}
+.menu-jumps a{font-size:.8125em}
+@media(min-width:1100px){.playable #play-shell[data-mode=menu] .play-world{grid-template-columns:minmax(0,1fr) minmax(390px,calc(420px * var(--ui-scale,1)))}}
+@media(max-width:650px){.menu-banner{height:110px}.menu-welcome-copy{padding:12px 4px 4px}.menu-jumps{gap:5px}.menu-jumps a{flex:1 0 auto;font-size:12px;padding:6px 10px}.menu-section{padding-top:16px}}

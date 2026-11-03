@@ -1,0 +1,277 @@
+{
+  "created": "2026-10-27",
+  "provider": "Tripo3D",
+  "model": "v3.1-20260211",
+  "texture_version": "v3.5-20260815",
+  "task_id": "91e47716-b016-4385-843e-3466df18ea73",
+  "credits_consumed": 60.0,
+  "reference": {
+    "provider": "OpenAI built-in ImageGen",
+    "date": "2026-10-27",
+    "sources": [],
+    "prompt": "Use case: stylized-concept. Create a single isolated full-body 3D character reference for a cozy Scandinavian dollhouse cafe game, suitable for image-to-3D and humanoid skeletal rigging. Friendly adult cafe guest, medium brown skin, short softly sculpted dark curly hair, simplified warm face, rounded slightly oversized head and sturdy rounded proportions. Terracotta crewneck sweater with plain sleeves, muted oat trousers, simple dark espresso shoes. No apron, no accessories or held objects. Neutral symmetrical A-pose: arms straight diagonally away from torso, hands open with distinct fingers, legs straight separated at hip width. Entire figure including hands and shoes visible with generous margins. Clear near-front three-quarter view with only slight rotation, neutral diffuse studio illumination, matte clean surfaces, very subtle textile detail, plain light grey background. One character only, no text, no labels, no pedestal, no multi-view sheet. Readable simple silhouette, charming game-ready sculptural design."
+  },
+  "reference_image": {
+    "path": "assets/generated/references/guest-terracotta.png",
+    "bytes": 1938724,
+    "sha256": "46e26b4bbfa2f9f6774ea139bddebf6b9036e4f325b0f203ff33e3c0be8c80f4"
+  },
+  "sources": [
+    {
+      "path": "assets/generated/guest-terracotta/network/raw/model.glb",
+      "bytes": 9624636,
+      "sha256": "645a378e912ea10347b61c76b932353f2c48a5030ef879ca576729c714e8e7bd"
+    },
+    {
+      "path": "assets/models/Neutral Idle.fbx",
+      "bytes": 54579552,
+      "sha256": "552ad0087bdadaa2f7fd153221f47b97668a9e1dbdf5730973bcd696c723780f"
+    },
+    {
+      "path": "assets/models/Walking.fbx",
+      "bytes": 365872,
+      "sha256": "a2621053a5520eeea519a0eb21cbe90a52adea5204fe3c5d4cfe24392651e839"
+    }
+  ],
+  "output": {
+    "path": "assets/models/Guest-animated.glb",
+    "bytes": 3856576,
+    "sha256": "b165e2e47106ead4a6c23d8ea61776a64363b906d276e9727601c538f10153f6"
+  },
+  "authoring": {
+    "tool": "Blender 5.1.2, Tripo skill, Mixamo rigging skill bind.py",
+    "height_m": 1.7,
+    "fit": "Joint-specific endpoints and donor roll conventions, visually checked from front and side",
+    "topology": {
+      "blender": "5.1.2",
+      "meshes": [
+        {
+          "name": "tripo_node_91e47716-b016-4385-843e-3466df18ea73",
+          "raw_boundary_edges": 3120,
+          "welded_boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "triangles": 11166
+        }
+      ]
+    },
+    "repair": "Welded coincident export seams at 0.00001 m; zero remaining boundaries, no hole caps necessary",
+    "textures": "Three embedded 1024 x 1024 maps, resized from preserved 4096 px originals",
+    "motion": "Supplied Mixamo Idle/Walking retargeted to fitted A-pose; in-place with foot-ground correction and closed loops; game-authored Seated pose",
+    "editable_blend": "assets/generated/guest-terracotta/Guest-animated.blend"
+  },
+  "validation": {
+    "blender": "5.1.2",
+    "validation": "Reimport exported GLB and evaluate every animation frame",
+    "skins": 1,
+    "joints": 65,
+    "meshes": [
+      {
+        "vertices": 7257,
+        "triangles": 11166,
+        "unweighted": 0,
+        "max_influences": 4,
+        "max_weight_sum_error": 1.2665987014770508e-07
+      }
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "frames": [
+          0,
+          263
+        ],
+        "duration_seconds": 8.766666666666667,
+        "loop_closure_max_vertex_distance_m": 0.0,
+        "max_vertex_displacement_m": 0.08331310233782552,
+        "min_z_m": -6.280606612563133e-08,
+        "max_z_m": 1.6794224977493286
+      },
+      {
+        "name": "Seated",
+        "frames": [
+          0,
+          30
+        ],
+        "duration_seconds": 1.0,
+        "loop_closure_max_vertex_distance_m": 0.0,
+        "max_vertex_displacement_m": 0,
+        "min_z_m": 0.029813868924975395,
+        "max_z_m": 1.4331146478652954
+      },
+      {
+        "name": "Walking",
+        "frames": [
+          0,
+          31
+        ],
+        "duration_seconds": 1.0333333333333334,
+        "loop_closure_max_vertex_distance_m": 0.0,
+        "max_vertex_displacement_m": 0.576822047763774,
+        "min_z_m": -5.299632903188467e-06,
+        "max_z_m": 1.6951088905334473
+      }
+    ],
+    "posed_topology": [
+      {
+        "clip": "Idle",
+        "frame": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Idle",
+        "frame": 131,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Idle",
+        "frame": 263,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Seated",
+        "frame": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Seated",
+        "frame": 15,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Seated",
+        "frame": 30,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Walking",
+        "frame": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Walking",
+        "frame": 15,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Walking",
+        "frame": 31,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  "visual_checks": [
+    "Front, back, side and underside mesh views",
+    "Front and side fitted joint overlays",
+    "Idle frames 1 and 130",
+    "Walking frames 1, 9, 17 and 25",
+    "Seated frame 1"
+  ],
+  "rights": "Paid generation explicitly authorized by user using their Tripo account; Mixamo source FBX files user supplied. Account license entitlement not independently verified.",
+  "remaining_limits": [
+    "Simplified fingers follow hand bones; no independent finger motion",
+    "No physical cloth simulation",
+    "Native Windows host and physical mobile performance not tested"
+  ],
+  "runtime_integration": {
+    "date": "2026-10-27",
+    "manifest_slot": 1,
+    "component": "SkeletalMeshComponent",
+    "transitions": "Idle while waiting; Walking during motor movement; Seated while dining; 0.15 second crossfades",
+    "checks": [
+      {
+        "backend": "webgl2",
+        "status": "WebGL 2 renderer ready",
+        "walking": {
+          "guest": 1,
+          "clip": "Walking",
+          "time": 0.0721,
+          "poseRevision": 8,
+          "x": 4.802638,
+          "z": -0.771285,
+          "yaw": -1.5323
+        },
+        "idle": {
+          "guest": 1,
+          "clip": "Idle",
+          "time": 0.0159,
+          "poseRevision": 71,
+          "x": 2.369644,
+          "z": -0.750006,
+          "yaw": -1.570743
+        },
+        "paused": {
+          "guest": 1,
+          "clip": "Idle",
+          "time": 0.1111,
+          "poseRevision": 76,
+          "x": 2.369644,
+          "z": -0.750006,
+          "yaw": -1.570743
+        },
+        "seated": {
+          "guest": 1,
+          "clip": "Seated",
+          "time": 0.3257,
+          "poseRevision": 704,
+          "x": -3,
+          "z": 2.8,
+          "yaw": 3.141593
+        },
+        "errors": [],
+        "passed": true
+      },
+      {
+        "backend": "automatic",
+        "status": "WebGpuRenderer ready",
+        "walking": {
+          "guest": 1,
+          "clip": "Walking",
+          "time": 0.025,
+          "poseRevision": 5,
+          "x": 4.934628,
+          "z": -0.786926,
+          "yaw": -1.3734
+        },
+        "idle": {
+          "guest": 1,
+          "clip": "Idle",
+          "time": 0,
+          "poseRevision": 81,
+          "x": 2.369644,
+          "z": -0.750006,
+          "yaw": -1.570743
+        },
+        "paused": {
+          "guest": 1,
+          "clip": "Idle",
+          "time": 0.0336,
+          "poseRevision": 83,
+          "x": 2.369644,
+          "z": -0.750006,
+          "yaw": -1.570743
+        },
+        "seated": {
+          "guest": 1,
+          "clip": "Seated",
+          "time": 0.3317,
+          "poseRevision": 684,
+          "x": -3,
+          "z": 2.8,
+          "yaw": 3.141593
+        },
+        "errors": [],
+        "passed": true
+      }
+    ],
+    "evidence": "build/evidence/guest-browser.json"
+  }
+}

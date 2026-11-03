@@ -4,7 +4,10 @@
 
 Create a welcoming neighborhood café that players enjoy both running and looking after. The emotional promise is **a little coffee, a good morning**: satisfying routines, recognizable regulars, and a small space that gradually becomes your own.
 
-This is a proposed art and interaction direction for the 3D WebEngine browser game. The current prototype establishes brewing, serving, coins, and pause; customers, decorating, progression, and the GUI described below are design targets.
+This is the art and interaction direction for the 3D WebEngine browser game.
+The first playable candidate now includes the service/management loop, paper HUD,
+camera, original local assets and sound. The reference image remains aspirational;
+device acceptance and remaining presentation limits are in docs/game-release.md.
 
 ## Player experience
 
@@ -52,6 +55,17 @@ Warm morning sunlight is the signature lighting state. Pair it with soft ambient
 Let oat and wood dominate, forest establish identity, and brass/terracotta supply small accents. Avoid making every object a saturated focal point. Use espresso text on oat and oat text on forest for primary GUI combinations. Sage, brass, and terracotta are decorative colors rather than default small-text colors; verify contrast on final rendered components.
 
 ## GUI style
+
+### Mandatory graphics authoring rule
+
+All graphic assets, including GUI artwork, icons, illustrations, textures, sprites,
+and decorative graphics, **must be generated with ImageGen**. **Never generate
+graphics procedurally**, including through hand-authored SVG paths, canvas drawing,
+code-generated bitmaps, CSS illustrations, or procedural texture generators.
+This requirement applies to new graphics and replacements for existing graphics.
+Use ordinary UI code only to arrange and display the generated assets and provide
+text, layout, controls, interaction, and accessibility; do not use it to create
+substitute artwork.
 
 The interface should feel like a café menu and a neatly arranged order ticket: warm paper-colored panels, dark readable text, modest rounded corners, thin borders, and soft shadows. Keep functional controls crisp and predictable.
 

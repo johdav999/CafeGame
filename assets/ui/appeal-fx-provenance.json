@@ -1,0 +1,39 @@
+{
+  "provider": "OpenAI built-in ImageGen",
+  "date": "2026-10-29",
+  "source_sha256": "9bc66e0f7b4bf0efda8d4c98ee4c5634585e3fd9eb0a343483ab67ba1f18cf73",
+  "prompt": "Use case: stylized-concept. Create a production game HUD FX sprite atlas on a truly transparent background, square image. Exactly two separate elements arranged horizontally in two equally sized square cells: LEFT a single small warm brass gold four-point sparkle, soft rounded tapered tips, bright oat center, restrained soft gold glow; RIGHT a thin circular soft golden halo ring with transparent empty center, evenly round, restrained glow. Each element centered in its own half with generous transparent margin and no overlap. Warm Scandinavian cafe game palette #D7AC5B and #F3E9D2. Clean readable understated reward effects, no text, no background, no other particles or icons. Will be cropped into separate sparkle and ring sprites.",
+  "processing": "Crop and Lanczos resize only; alpha preserved; lossless WebP. No procedural artwork.",
+  "assets": [
+    {
+      "path": "appeal-sparkle.webp",
+      "crop": [
+        80,
+        380,
+        560,
+        860
+      ],
+      "size": 128,
+      "sha256": "fa78c509eb839f185c51d1af97a2bacad335c6ad5254c29218bb64e701fde4cb",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "path": "appeal-halo.webp",
+      "crop": [
+        640,
+        340,
+        1230,
+        930
+      ],
+      "size": 192,
+      "sha256": "62aba93260ba8dc7314a70822ff504bf97bf6970ecfa6dd45188d120584ee177",
+      "alpha_range": [
+        0,
+        255
+      ]
+    }
+  ]
+}

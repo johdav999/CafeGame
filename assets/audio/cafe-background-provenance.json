@@ -1,0 +1,48 @@
+{
+  "approval": "user-supplied-and-requested-integration-2026-10-28",
+  "provider": "user-provided",
+  "listeningReview": "Not auditioned by the agent; waveform, format, loop seam and browser loading validated separately.",
+  "preparation": "tools/prepare-cafe-background.cjs; mono 16 kHz resampling, per-clip level matching and DC removal, two 300 ms cosine crossfades, bounded RMS/peak normalization",
+  "sources": [
+    {
+      "path": "assets/audio/cafesound1.wav",
+      "sha256": "4cdee7e8e67d46e6902588aea8d55108afea1b71eb946c3f231a5c097ce351ff",
+      "bytes": 1566798,
+      "duration": 8.16,
+      "sourceRms": 0.0185735549243279,
+      "sourcePeak": 0.5935510993003845,
+      "gain": 0.5054324730484172,
+      "dcRemoved": -0.0000024087393756556206
+    },
+    {
+      "path": "assets/audio/cafesound2.wav",
+      "sha256": "f49978b4498a242a14612957d0f502bfc69a80a1a25c24f283d51eb294fc76e9",
+      "bytes": 1566798,
+      "duration": 8.16,
+      "sourceRms": 0.010956455964056908,
+      "sourcePeak": 0.25070837140083313,
+      "gain": 1.1966094244230852,
+      "dcRemoved": -0.0000012521129731582317
+    }
+  ],
+  "asset": {
+    "id": 3,
+    "path": "audio/cafe-background.wav",
+    "provider": "user-provided",
+    "sha256": "12335199a16491a08f1a5839affe532e234eda5381b11e9467a74e7dc76ad701",
+    "bytes": 503084,
+    "sampleRate": 16000,
+    "channels": 1,
+    "bitsPerSample": 16,
+    "metrics": {
+      "duration": 15.72,
+      "peak": 0.3,
+      "rms": 0.011446082178753939,
+      "gain": 1.0000001589457446,
+      "dcRemoved": 4.7294330510881516e-8,
+      "loop": true,
+      "loopCrossfadeSeconds": 0.3,
+      "loopBoundaryDelta": 0.0011072673091884896
+    }
+  }
+}

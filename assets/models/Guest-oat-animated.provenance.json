@@ -1,0 +1,1063 @@
+{
+  "created": "2026-10-27",
+  "provider": "Tripo3D",
+  "model": "v3.1-20260211",
+  "texture_version": "v3.5-20260815",
+  "task_id": "ce4f4929-deba-4394-9b25-41cf2bfecab7",
+  "credits_consumed": 60.0,
+  "reference": {
+    "provider": "OpenAI built-in ImageGen",
+    "date": "2026-10-27",
+    "sources": [],
+    "prompt": "Use case: stylized-concept. Single isolated full-body 3D character reference for a cozy Scandinavian dollhouse cafe game and humanoid rigging. Friendly young adult male cafe guest of East Asian appearance, light medium warm skin, short sculpted straight black hair with side part, simplified clean shaven warm face, rounded slightly oversized head, sturdy rounded proportions. Plain oat beige overshirt buttoned over a muted honey shirt, muted slate blue trousers, simple dark espresso sneakers. No accessories, no apron, no held objects. Symmetric neutral A-pose, straight arms diagonally away from torso, open hands with distinct fingers, straight legs hip width apart. Complete body and hands visible with generous margins. Near-front three-quarter view, slight rotation only. Neutral diffuse studio lighting, matte softly sculpted forms, subtle fabric detail, plain light grey background. One character only, no text, no pedestal, no multi-view sheet."
+  },
+  "reference_image": {
+    "path": "assets/generated/references/guest-oat.png",
+    "bytes": 1857388,
+    "sha256": "8361246ffcf6e4fde9665851dd77812cb8b478259bfa21b1f02c2c5ddcf047a5"
+  },
+  "sources": [
+    {
+      "path": "assets/generated/guest-oat/raw/model.glb",
+      "bytes": 10367432,
+      "sha256": "a4d9d70850dfcee3dc5b34eed7315e0a5979abb5489c0d51f71a5bfc96fb395f"
+    },
+    {
+      "path": "assets/models/Neutral Idle.fbx",
+      "bytes": 54579552,
+      "sha256": "552ad0087bdadaa2f7fd153221f47b97668a9e1dbdf5730973bcd696c723780f"
+    },
+    {
+      "path": "assets/models/Walking.fbx",
+      "bytes": 365872,
+      "sha256": "a2621053a5520eeea519a0eb21cbe90a52adea5204fe3c5d4cfe24392651e839"
+    }
+  ],
+  "output": {
+    "path": "assets/models/Guest-oat-animated.glb",
+    "bytes": 3854928,
+    "sha256": "54065844e9094b9066c5badec8d875aebe5061e18934198c962719452297d158"
+  },
+  "authoring": {
+    "tool": "Blender 5.1.2, Tripo skill, Mixamo rigging skill bind.py",
+    "height_m": 1.7,
+    "fit": "Individual joint landmarks reviewed in front and side overlays; donor bone roll retained",
+    "fit_endpoints": {
+      "mixamorig9:Hips": {
+        "head": [
+          0,
+          0.035,
+          0.78
+        ],
+        "tail": [
+          0,
+          0.025,
+          0.91
+        ]
+      },
+      "mixamorig9:Spine": {
+        "head": [
+          0,
+          0.025,
+          0.91
+        ],
+        "tail": [
+          0,
+          0.025,
+          1.04
+        ]
+      },
+      "mixamorig9:Spine1": {
+        "head": [
+          0,
+          0.025,
+          1.04
+        ],
+        "tail": [
+          0,
+          0.025,
+          1.16
+        ]
+      },
+      "mixamorig9:Spine2": {
+        "head": [
+          0,
+          0.025,
+          1.16
+        ],
+        "tail": [
+          0,
+          0.015,
+          1.27
+        ]
+      },
+      "mixamorig9:Neck": {
+        "head": [
+          0,
+          0.015,
+          1.27
+        ],
+        "tail": [
+          0,
+          0.005,
+          1.34
+        ]
+      },
+      "mixamorig9:Head": {
+        "head": [
+          0,
+          0.005,
+          1.34
+        ],
+        "tail": [
+          0,
+          0.015,
+          1.61
+        ]
+      },
+      "mixamorig9:HeadTop_End": {
+        "head": [
+          0,
+          0.015,
+          1.61
+        ],
+        "tail": [
+          0,
+          0.015,
+          1.68
+        ]
+      },
+      "mixamorig9:LeftShoulder": {
+        "head": [
+          0.055,
+          0.025,
+          1.24
+        ],
+        "tail": [
+          0.18,
+          0.025,
+          1.22
+        ]
+      },
+      "mixamorig9:LeftArm": {
+        "head": [
+          0.18,
+          0.025,
+          1.22
+        ],
+        "tail": [
+          0.3,
+          0.005,
+          1.02
+        ]
+      },
+      "mixamorig9:LeftForeArm": {
+        "head": [
+          0.3,
+          0.005,
+          1.02
+        ],
+        "tail": [
+          0.43,
+          -0.025,
+          0.82
+        ]
+      },
+      "mixamorig9:LeftHand": {
+        "head": [
+          0.43,
+          -0.025,
+          0.82
+        ],
+        "tail": [
+          0.47,
+          -0.04,
+          0.68
+        ]
+      },
+      "mixamorig9:LeftUpLeg": {
+        "head": [
+          0.115,
+          0.035,
+          0.78
+        ],
+        "tail": [
+          0.15,
+          0.025,
+          0.43
+        ]
+      },
+      "mixamorig9:LeftLeg": {
+        "head": [
+          0.15,
+          0.025,
+          0.43
+        ],
+        "tail": [
+          0.18,
+          0.015,
+          0.115
+        ]
+      },
+      "mixamorig9:LeftFoot": {
+        "head": [
+          0.18,
+          0.015,
+          0.115
+        ],
+        "tail": [
+          0.18,
+          -0.1,
+          0.055
+        ]
+      },
+      "mixamorig9:LeftToeBase": {
+        "head": [
+          0.18,
+          -0.1,
+          0.055
+        ],
+        "tail": [
+          0.18,
+          -0.17,
+          0.045
+        ]
+      },
+      "mixamorig9:LeftToe_End": {
+        "head": [
+          0.18,
+          -0.17,
+          0.045
+        ],
+        "tail": [
+          0.18,
+          -0.19,
+          0.045
+        ]
+      },
+      "mixamorig9:LeftHandThumb1": {
+        "head": [
+          0.4114699363708496,
+          -0.07251165062189102,
+          0.7657849788665771
+        ],
+        "tail": [
+          0.40011700987815857,
+          -0.10283951461315155,
+          0.7158156037330627
+        ]
+      },
+      "mixamorig9:LeftHandThumb2": {
+        "head": [
+          0.3966459333896637,
+          -0.11052095890045166,
+          0.7224128842353821
+        ],
+        "tail": [
+          0.3821559548377991,
+          -0.13551642000675201,
+          0.6779893636703491
+        ]
+      },
+      "mixamorig9:LeftHandThumb3": {
+        "head": [
+          0.3819953203201294,
+          -0.13587573170661926,
+          0.6782464981079102
+        ],
+        "tail": [
+          0.3733886480331421,
+          -0.15677598118782043,
+          0.643316388130188
+        ]
+      },
+      "mixamorig9:LeftHandThumb4": {
+        "head": [
+          0.3775182366371155,
+          -0.14748255908489227,
+          0.6385444402694702
+        ],
+        "tail": [
+          0.36891138553619385,
+          -0.16838279366493225,
+          0.6036141514778137
+        ]
+      },
+      "mixamorig9:LeftHandIndex1": {
+        "head": [
+          0.45766815543174744,
+          -0.09606828540563583,
+          0.672137975692749
+        ],
+        "tail": [
+          0.4691893458366394,
+          -0.10920706391334534,
+          0.619406521320343
+        ]
+      },
+      "mixamorig9:LeftHandIndex2": {
+        "head": [
+          0.46926769614219666,
+          -0.10893150418996811,
+          0.6193557977676392
+        ],
+        "tail": [
+          0.4738743305206299,
+          -0.11957313120365143,
+          0.5694261789321899
+        ]
+      },
+      "mixamorig9:LeftHandIndex3": {
+        "head": [
+          0.4738253355026245,
+          -0.11974489688873291,
+          0.5694586634635925
+        ],
+        "tail": [
+          0.47852563858032227,
+          -0.129216730594635,
+          0.5259346961975098
+        ]
+      },
+      "mixamorig9:LeftHandIndex4": {
+        "head": [
+          0.4784962236881256,
+          -0.12932024896144867,
+          0.5259542465209961
+        ],
+        "tail": [
+          0.4831964373588562,
+          -0.13879206776618958,
+          0.4824303686618805
+        ]
+      },
+      "mixamorig9:LeftHandMiddle1": {
+        "head": [
+          0.47312772274017334,
+          -0.059703677892684937,
+          0.6652995347976685
+        ],
+        "tail": [
+          0.4881993532180786,
+          -0.06566743552684784,
+          0.6110716462135315
+        ]
+      },
+      "mixamorig9:LeftHandMiddle2": {
+        "head": [
+          0.4882712960243225,
+          -0.0653684139251709,
+          0.6110595464706421
+        ],
+        "tail": [
+          0.4926310181617737,
+          -0.06873774528503418,
+          0.5571620464324951
+        ]
+      },
+      "mixamorig9:LeftHandMiddle3": {
+        "head": [
+          0.49257439374923706,
+          -0.06897225975990295,
+          0.5571727156639099
+        ],
+        "tail": [
+          0.4992043375968933,
+          -0.0725996196269989,
+          0.5099870562553406
+        ]
+      },
+      "mixamorig9:LeftHandMiddle4": {
+        "head": [
+          0.4991884231567383,
+          -0.07266390323638916,
+          0.5099899768829346
+        ],
+        "tail": [
+          0.5058183073997498,
+          -0.07629124820232391,
+          0.4628044068813324
+        ]
+      },
+      "mixamorig9:LeftHandRing1": {
+        "head": [
+          0.4833417236804962,
+          -0.024592453613877296,
+          0.661350667476654
+        ],
+        "tail": [
+          0.48957663774490356,
+          -0.025857387110590935,
+          0.6142035126686096
+        ]
+      },
+      "mixamorig9:LeftHandRing2": {
+        "head": [
+          0.4895593225955963,
+          -0.025933003053069115,
+          0.6142034530639648
+        ],
+        "tail": [
+          0.492787629365921,
+          -0.02652410790324211,
+          0.5694060325622559
+        ]
+      },
+      "mixamorig9:LeftHandRing3": {
+        "head": [
+          0.4927448034286499,
+          -0.02671421691775322,
+          0.5694057941436768
+        ],
+        "tail": [
+          0.5048989653587341,
+          -0.02935715951025486,
+          0.5340596437454224
+        ]
+      },
+      "mixamorig9:LeftHandRing4": {
+        "head": [
+          0.5049586296081543,
+          -0.029091354459524155,
+          0.5340612530708313
+        ],
+        "tail": [
+          0.5171129703521729,
+          -0.03173432499170303,
+          0.49871522188186646
+        ]
+      },
+      "mixamorig9:LeftHandPinky1": {
+        "head": [
+          0.4838399589061737,
+          0.01427808590233326,
+          0.6752249002456665
+        ],
+        "tail": [
+          0.4909433424472809,
+          0.012702105566859245,
+          0.633903980255127
+        ]
+      },
+      "mixamorig9:LeftHandPinky2": {
+        "head": [
+          0.4909508228302002,
+          0.01273568905889988,
+          0.6339039206504822
+        ],
+        "tail": [
+          0.49151694774627686,
+          0.012642106041312218,
+          0.5959969162940979
+        ]
+      },
+      "mixamorig9:LeftHandPinky3": {
+        "head": [
+          0.49146485328674316,
+          0.012411421164870262,
+          0.5959976315498352
+        ],
+        "tail": [
+          0.5003181099891663,
+          0.010425688698887825,
+          0.5677739381790161
+        ]
+      },
+      "mixamorig9:LeftHandPinky4": {
+        "head": [
+          0.5003624558448792,
+          0.010622845962643623,
+          0.5677745342254639
+        ],
+        "tail": [
+          0.5092157125473022,
+          0.008637109771370888,
+          0.5395509004592896
+        ]
+      },
+      "mixamorig9:RightShoulder": {
+        "head": [
+          -0.055,
+          0.025,
+          1.24
+        ],
+        "tail": [
+          -0.18,
+          0.025,
+          1.22
+        ]
+      },
+      "mixamorig9:RightArm": {
+        "head": [
+          -0.18,
+          0.025,
+          1.22
+        ],
+        "tail": [
+          -0.3,
+          0.005,
+          1.02
+        ]
+      },
+      "mixamorig9:RightForeArm": {
+        "head": [
+          -0.3,
+          0.005,
+          1.02
+        ],
+        "tail": [
+          -0.43,
+          -0.025,
+          0.82
+        ]
+      },
+      "mixamorig9:RightHand": {
+        "head": [
+          -0.43,
+          -0.025,
+          0.82
+        ],
+        "tail": [
+          -0.47,
+          -0.04,
+          0.68
+        ]
+      },
+      "mixamorig9:RightUpLeg": {
+        "head": [
+          -0.115,
+          0.035,
+          0.78
+        ],
+        "tail": [
+          -0.15,
+          0.025,
+          0.43
+        ]
+      },
+      "mixamorig9:RightLeg": {
+        "head": [
+          -0.15,
+          0.025,
+          0.43
+        ],
+        "tail": [
+          -0.18,
+          0.015,
+          0.115
+        ]
+      },
+      "mixamorig9:RightFoot": {
+        "head": [
+          -0.18,
+          0.015,
+          0.115
+        ],
+        "tail": [
+          -0.18,
+          -0.1,
+          0.055
+        ]
+      },
+      "mixamorig9:RightToeBase": {
+        "head": [
+          -0.18,
+          -0.1,
+          0.055
+        ],
+        "tail": [
+          -0.18,
+          -0.17,
+          0.045
+        ]
+      },
+      "mixamorig9:RightToe_End": {
+        "head": [
+          -0.18,
+          -0.17,
+          0.045
+        ],
+        "tail": [
+          -0.18,
+          -0.19,
+          0.045
+        ]
+      },
+      "mixamorig9:RightHandThumb1": {
+        "head": [
+          -0.411420077085495,
+          -0.07181300967931747,
+          0.7676183581352234
+        ],
+        "tail": [
+          -0.40001213550567627,
+          -0.10211747884750366,
+          0.7193379998207092
+        ]
+      },
+      "mixamorig9:RightHandThumb2": {
+        "head": [
+          -0.39655667543411255,
+          -0.10926337540149689,
+          0.7257131338119507
+        ],
+        "tail": [
+          -0.38075995445251465,
+          -0.13533549010753632,
+          0.680321455001831
+        ]
+      },
+      "mixamorig9:RightHandThumb3": {
+        "head": [
+          -0.38181376457214355,
+          -0.13313741981983185,
+          0.6787838935852051
+        ],
+        "tail": [
+          -0.36946284770965576,
+          -0.155543252825737,
+          0.6405641436576843
+        ]
+      },
+      "mixamorig9:RightHandThumb4": {
+        "head": [
+          -0.3722166419029236,
+          -0.1498136669397354,
+          0.6370094418525696
+        ],
+        "tail": [
+          -0.3598659038543701,
+          -0.17221954464912415,
+          0.5987898111343384
+        ]
+      },
+      "mixamorig9:RightHandIndex1": {
+        "head": [
+          -0.4573054611682892,
+          -0.09768415987491608,
+          0.6678147912025452
+        ],
+        "tail": [
+          -0.46914365887641907,
+          -0.10626748949289322,
+          0.616614580154419
+        ]
+      },
+      "mixamorig9:RightHandIndex2": {
+        "head": [
+          -0.46921926736831665,
+          -0.10599476099014282,
+          0.6165870428085327
+        ],
+        "tail": [
+          -0.47429224848747253,
+          -0.11251402646303177,
+          0.5671474933624268
+        ]
+      },
+      "mixamorig9:RightHandIndex3": {
+        "head": [
+          -0.4742550849914551,
+          -0.11264733225107193,
+          0.5671614408493042
+        ],
+        "tail": [
+          -0.4781406819820404,
+          -0.11806467920541763,
+          0.5251900553703308
+        ]
+      },
+      "mixamorig9:RightHandIndex4": {
+        "head": [
+          -0.47810205817222595,
+          -0.11820393800735474,
+          0.5252046585083008
+        ],
+        "tail": [
+          -0.4819878041744232,
+          -0.12362130731344223,
+          0.48323333263397217
+        ]
+      },
+      "mixamorig9:RightHandMiddle1": {
+        "head": [
+          -0.47593650221824646,
+          -0.05896782875061035,
+          0.6632387638092041
+        ],
+        "tail": [
+          -0.48800671100616455,
+          -0.06383523344993591,
+          0.6072927713394165
+        ]
+      },
+      "mixamorig9:RightHandMiddle2": {
+        "head": [
+          -0.48805344104766846,
+          -0.06365083158016205,
+          0.6072871685028076
+        ],
+        "tail": [
+          -0.49236443638801575,
+          -0.06640876084566116,
+          0.5552402138710022
+        ]
+      },
+      "mixamorig9:RightHandMiddle3": {
+        "head": [
+          -0.4923146367073059,
+          -0.06660426408052444,
+          0.5552467703819275
+        ],
+        "tail": [
+          -0.49955540895462036,
+          -0.06991294026374817,
+          0.509458065032959
+        ]
+      },
+      "mixamorig9:RightHandMiddle4": {
+        "head": [
+          -0.49955862760543823,
+          -0.06990180909633636,
+          0.5094578862190247
+        ],
+        "tail": [
+          -0.5067995190620422,
+          -0.07321049273014069,
+          0.463669091463089
+        ]
+      },
+      "mixamorig9:RightHandRing1": {
+        "head": [
+          -0.48318976163864136,
+          -0.02410244196653366,
+          0.6616004705429077
+        ],
+        "tail": [
+          -0.4898791015148163,
+          -0.023238327354192734,
+          0.6144793033599854
+        ]
+      },
+      "mixamorig9:RightHandRing2": {
+        "head": [
+          -0.48986896872520447,
+          -0.023282423615455627,
+          0.6144770383834839
+        ],
+        "tail": [
+          -0.49365490674972534,
+          -0.02189113199710846,
+          0.5701156258583069
+        ]
+      },
+      "mixamorig9:RightHandRing3": {
+        "head": [
+          -0.493621826171875,
+          -0.022036602720618248,
+          0.5701085329055786
+        ],
+        "tail": [
+          -0.5042268633842468,
+          -0.022610533982515335,
+          0.5335218906402588
+        ]
+      },
+      "mixamorig9:RightHandRing4": {
+        "head": [
+          -0.5042703151702881,
+          -0.02242102473974228,
+          0.5335322618484497
+        ],
+        "tail": [
+          -0.5148754119873047,
+          -0.022994957864284515,
+          0.4969455897808075
+        ]
+      },
+      "mixamorig9:RightHandPinky1": {
+        "head": [
+          -0.48304495215415955,
+          0.014168085530400276,
+          0.6803795099258423
+        ],
+        "tail": [
+          -0.4919840693473816,
+          0.01428583450615406,
+          0.6359421610832214
+        ]
+      },
+      "mixamorig9:RightHandPinky2": {
+        "head": [
+          -0.49202489852905273,
+          0.014462394639849663,
+          0.6359511613845825
+        ],
+        "tail": [
+          -0.49240463972091675,
+          0.016250433400273323,
+          0.5977112054824829
+        ]
+      },
+      "mixamorig9:RightHandPinky3": {
+        "head": [
+          -0.4923625588417053,
+          0.016067104414105415,
+          0.5977026224136353
+        ],
+        "tail": [
+          -0.49648329615592957,
+          0.016773836687207222,
+          0.563915491104126
+        ]
+      },
+      "mixamorig9:RightHandPinky4": {
+        "head": [
+          -0.4964854419231415,
+          0.016780419275164604,
+          0.5639159679412842
+        ],
+        "tail": [
+          -0.5006061792373657,
+          0.01748715154826641,
+          0.5301288366317749
+        ]
+      }
+    },
+    "topology": {
+      "blender": "5.1.2",
+      "meshes": [
+        {
+          "name": "tripo_node_ce4f4929-deba-4394-9b25-41cf2bfecab7",
+          "raw_boundary_edges": 7610,
+          "welded_boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "triangles": 48008,
+          "budget_triangles": 12000
+        }
+      ]
+    },
+    "repair": "Weld coincident export seams; closed surface retained during reduction",
+    "textures": "Three embedded 1024 x 1024 maps",
+    "motion": "Supplied Mixamo Idle/Walking, in-place with foot-ground correction and closed loops; game-authored Seated pose",
+    "editable_blend": "assets\\generated\\guest-oat\\Guest-animated.blend"
+  },
+  "validation": {
+    "blender": "5.1.2",
+    "validation": "Reimport exported GLB and evaluate every animation frame",
+    "skins": 1,
+    "joints": 65,
+    "meshes": [
+      {
+        "vertices": 8260,
+        "triangles": 12000,
+        "unweighted": 0,
+        "max_influences": 4,
+        "max_weight_sum_error": 1.3224780559539795E-07
+      }
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "frames": [
+          0,
+          263
+        ],
+        "duration_seconds": 8.766666666666667,
+        "loop_closure_max_vertex_distance_m": 0.0,
+        "max_vertex_displacement_m": 0.09188435766251359,
+        "min_z_m": -2.866145223379135E-07,
+        "max_z_m": 1.6819411516189575
+      },
+      {
+        "name": "Seated",
+        "frames": [
+          0,
+          30
+        ],
+        "duration_seconds": 1.0,
+        "loop_closure_max_vertex_distance_m": 0.0,
+        "max_vertex_displacement_m": 0,
+        "min_z_m": 0.07260327786207199,
+        "max_z_m": 1.5087769031524658
+      },
+      {
+        "name": "Walking",
+        "frames": [
+          0,
+          31
+        ],
+        "duration_seconds": 1.0333333333333334,
+        "loop_closure_max_vertex_distance_m": 0.0,
+        "max_vertex_displacement_m": 0.5500263837202256,
+        "min_z_m": -6.4168707467615604E-06,
+        "max_z_m": 1.6928043365478516
+      }
+    ],
+    "posed_topology": [
+      {
+        "clip": "Idle",
+        "frame": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Idle",
+        "frame": 131,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Idle",
+        "frame": 263,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Seated",
+        "frame": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Seated",
+        "frame": 15,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Seated",
+        "frame": 30,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Walking",
+        "frame": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Walking",
+        "frame": 15,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      {
+        "clip": "Walking",
+        "frame": 31,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      }
+    ]
+  },
+  "visual_checks": [
+    "Front and side fitted joint overlays",
+    "Idle and walking deformation samples",
+    "Seated pose",
+    "Final GLB reimport front/back/side/top/underside"
+  ],
+  "rights": "Paid generation explicitly requested by user with their Tripo account; user-supplied Mixamo FBX sources. Account entitlement not independently verified.",
+  "runtime_integration": {
+    "manifest_slot": 14,
+    "component": "SkeletalMeshComponent",
+    "selection": "Guest ID modulo four; original remains slot 1",
+    "browser_acceptance": "Passed Edge WebGL 2 and WebGPU on 2026-10-27",
+    "evidence": "build/evidence/guest-variants-browser.json",
+    "checks": [
+      {
+        "name": "oat",
+        "backend": "webgl2",
+        "status": "WebGL 2 renderer ready",
+        "roster": [
+          {
+            "guest": 1,
+            "model": 1
+          },
+          {
+            "guest": 2,
+            "model": 12
+          },
+          {
+            "guest": 3,
+            "model": 13
+          },
+          {
+            "guest": 4,
+            "model": 14
+          }
+        ],
+        "walking": {
+          "guest": 1,
+          "model": 1,
+          "clip": "Walking",
+          "time": 0.0176,
+          "poseRevision": 4,
+          "x": 4.934628,
+          "z": -0.786926,
+          "yaw": -1.3734
+        },
+        "seated": {
+          "guest": 1,
+          "model": 1,
+          "clip": "Seated",
+          "time": 0.3143,
+          "poseRevision": 726,
+          "x": -3,
+          "z": 2.8,
+          "yaw": 3.141593
+        },
+        "passed": true
+      },
+      {
+        "name": "oat",
+        "backend": "automatic",
+        "status": "WebGpuRenderer ready",
+        "roster": [
+          {
+            "guest": 1,
+            "model": 1
+          },
+          {
+            "guest": 2,
+            "model": 12
+          },
+          {
+            "guest": 3,
+            "model": 13
+          },
+          {
+            "guest": 4,
+            "model": 14
+          }
+        ],
+        "walking": {
+          "guest": 1,
+          "model": 1,
+          "clip": "Walking",
+          "time": 0.0141,
+          "poseRevision": 4,
+          "x": 4.736021,
+          "z": -0.768719,
+          "yaw": -1.5323
+        },
+        "seated": {
+          "guest": 1,
+          "model": 1,
+          "clip": "Seated",
+          "time": 0.3167,
+          "poseRevision": 719,
+          "x": -3,
+          "z": 2.8,
+          "yaw": 3.141593
+        },
+        "passed": true
+      }
+    ]
+  },
+  "remaining_limits": [
+    "Fingers follow hand bones",
+    "No physical cloth simulation",
+    "Native Windows host and physical mobile performance not tested"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "created": "2026-10-27",
+  "tool": "Blender 5.1.2; mixamo-rigging skill bind.py plus staged fitting/retargeting scripts",
+  "sources": [
+    {
+      "path": "assets/models/Barista.glb",
+      "bytes": 7082860,
+      "sha256": "7e668d3ec70b17da07e1a3c21f6846fd9e8ac5845238275834094d3628187f31",
+      "provenance": "User supplied"
+    },
+    {
+      "path": "assets/models/Neutral Idle.fbx",
+      "bytes": 54579552,
+      "sha256": "552ad0087bdadaa2f7fd153221f47b97668a9e1dbdf5730973bcd696c723780f",
+      "provenance": "User supplied"
+    },
+    {
+      "path": "assets/models/Walking.fbx",
+      "bytes": 365872,
+      "sha256": "a2621053a5520eeea519a0eb21cbe90a52adea5204fe3c5d4cfe24392651e839",
+      "provenance": "User supplied"
+    }
+  ],
+  "output": {
+    "path": "assets/models/Barista-animated.glb",
+    "bytes": 3607608,
+    "sha256": "3d00d79aa663dd75c1fe803a6bb919181a0ca9eb28d9557e10144738a1116cd3"
+  },
+  "authoring": {
+    "height_m": 1.75,
+    "rig": "65 Mixamo joints, original names and hierarchy preserved",
+    "fit": "Joint-by-joint fit from front and side reference renders; donor T-pose compensated against target A-pose during retargeting",
+    "weights": "Coincident seams welded at 0.00001 m before heat weighting; core torso weights refined and smoothed; normalized maximum four influences",
+    "hands": "Sculpted relaxed fingers move with the hand bones; finger joints retained but do not independently deform the mesh",
+    "motion": "Idle and Walking at 30 FPS, in-place with foot-ground correction and matching loop endpoints",
+    "editable_blend": "assets/generated/barista-rig/Barista-animated.blend",
+    "scripts": "assets/generated/barista-rig/",
+    "high_resolution_export": {
+      "path": "assets/generated/barista-rig/Barista-animated.glb",
+      "bytes": 7523568,
+      "sha256": "1d5cb95acec91fd8b8f23fe7be7e8044dc8376f1085baca6fc53d74e6b561f8f"
+    },
+    "runtime_textures": "Three embedded 1024 x 1024 textures; resized in Blender from the preserved high-resolution blend. Geometry, skin, nodes and all animation accessors verified byte-identical to the original animated export."
+  },
+  "validation": {
+    "blender": "5.1.2",
+    "validation": "Reimport exported GLB and evaluate every animation frame",
+    "skins": 1,
+    "joints": 65,
+    "meshes": [
+      {
+        "vertices": 12059,
+        "triangles": 19774,
+        "unweighted": 0,
+        "max_influences": 4,
+        "max_weight_sum_error": 1.3748649507761002e-7
+      }
+    ],
+    "clips": [
+      {
+        "name": "Idle",
+        "frames": [
+          0,
+          263
+        ],
+        "duration_seconds": 8.766666666666667,
+        "loop_closure_max_vertex_distance_m": 0,
+        "max_vertex_displacement_m": 0.09208626924759879,
+        "min_z_m": -5.797483026981354e-7,
+        "max_z_m": 1.7314637899398804
+      },
+      {
+        "name": "Walking",
+        "frames": [
+          0,
+          31
+        ],
+        "duration_seconds": 1.0333333333333334,
+        "loop_closure_max_vertex_distance_m": 0,
+        "max_vertex_displacement_m": 0.586312852537823,
+        "min_z_m": -0.0000010561197996139526,
+        "max_z_m": 1.7481008768081665
+      }
+    ]
+  },
+  "visual_checks": [
+    "Front and side rig alignment",
+    "Idle at frames 1 and 130",
+    "Walking at frames 1, 9, 17 and 25"
+  ],
+  "remaining_limits": [
+    "Native Windows rendered acceptance not run",
+    "Hardware performance and mobile acceptance not measured",
+    "19774 source triangles preserved; no retopology or decimation",
+    "No physical cloth simulation or independent finger articulation"
+  ],
+  "rights": "Source assets supplied by user; license entitlement not independently verified",
+  "runtime_integration": {
+    "date": "2026-10-27",
+    "manifest_slot": 4,
+    "component": "SkeletalMeshComponent",
+    "transitions": "Idle stationary; Walking during motor movement; 0.15 second crossfade",
+    "browser_checks": [
+      "Edge WebGL 2",
+      "Edge WebGPU",
+      "Pose clock/revision advances",
+      "Movement and arrival switch clips",
+      "Pause freezes clock and position",
+      "Invalid model replacement preserves current character"
+    ],
+    "evidence": "build/evidence/barista-browser.json"
+  }
+}

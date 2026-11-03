@@ -1,0 +1,48 @@
+#include "engine/simulator/occupancy.hpp"
+inline void occupancyChecks() {
+    using namespace engine::simulator;
+    auto check=[](bool ok,std::source_location at=std::source_location::current()){if(!ok)throw std::runtime_error("Occupancy line "+std::to_string(at.line()));};
+    CustomerId a{1,10},b{2,10},c{3,10};
+    OccupancyPool<> queue(3,4,true);
+    check(bool(queue.request(a)));check(bool(queue.request(b)));check(bool(queue.request(c)));
+    auto stale=queue.claim(b).value();check(stale.point==1);
+    check(bool(queue.occupy(b,stale.point,stale.token)));
+    check(bool(queue.release(a)));check(queue.claim(b)->point==0 && !queue.claim(b)->occupied);
+    check(!queue.occupy(b,stale.point,stale.token));
+    check(queue.claim(c)->point==1);
+    OccupancyPool<> seats(1,3);
+    check(bool(seats.request(a)));check(bool(seats.request(b)));check(bool(seats.request(c)));
+    check(seats.claim(a)->point==0 && seats.claim(b)->point==OccupancyPool<>::waiting);
+    check(seats.request({4,10}).error==Error::LimitReached);
+    auto token=seats.claim(a)->token;check(bool(seats.request(a)));check(seats.claim(a)->token==token);
+    check(bool(seats.release(a)));check(seats.claim(b)->point==0);
+    check(seats.release(a).error==Error::AlreadyTerminal);
+    auto saved=seats.claims();auto invalid=saved;invalid[1].point=0;
+    check(!seats.restore(invalid));check(seats.claim(b)->point==0);
+    auto held=seats.claim(b).value();check(bool(seats.restore(saved)));
+    check(!seats.occupy(b,held.point,held.token));
+    check(bool(seats.release(b)));check(seats.claim(c)->point==0);
+    OccupancyPool<WorkerId> access(1);check(bool(access.request({1,2})));
+    check(bool(access.occupy({1,2},0,access.claim({1,2})->token)));
+    cafe::Simulation game;
+    check(game.welcome(1) && game.welcome(1) && game.welcome(1) && !game.welcome(1));
+    auto first=game.queue.claims()[0].owner,second=game.queue.claims()[1].owner;
+    check(game.brew());check(game.customer==first && game.queue.claim(second)->point==0);
+    game.advance(3);check(game.serve(false));
+    check(game.counter.claims().empty() && game.seats.claims().empty());
+    check(game.brew());check(game.customer==second);game.advance(3);check(game.serve());
+    auto bytes=game.save();cafe::Simulation restored;check(restored.load(bytes));
+    check(restored.queue.claims().size()==1 && restored.seats.claims().empty());
+    check(restored.save()==bytes);
+    cafe::Simulation seated;
+    check(seated.welcome() && seated.welcome() && seated.welcome());
+    check(seated.queue.claims().empty() && seated.seats.claims().size()==3);
+    check(seated.seats.claims()[2].point==cafe::Simulation::Pool::waiting);
+    check(seated.brew());seated.advance(3);check(seated.serve());
+    check(seated.brew());seated.advance(3);check(seated.serve() && !seated.brew());
+    bytes=seated.save();check(restored.load(bytes) && restored.save()==bytes);
+    cafe::Simulation legacyGame;check(legacyGame.brew());legacyGame.advance(1);
+    auto legacy=legacyGame.save();std::uint64_t coreSize=0;for(int i=0;i<8;++i)coreSize|=std::uint64_t(legacy[80+i])<<(8*i);
+    legacy[8]=1;legacy.resize(88+std::size_t(coreSize));
+    cafe::Simulation preserved;auto keep=preserved.save();check(!preserved.load(legacy) && preserved.save()==keep);
+}

@@ -1,0 +1,295 @@
+{
+  "name": "window-wall",
+  "id": 24,
+  "path": "models/cafe-window-wall.glb",
+  "provider": "Tripo3D",
+  "source": "assets\\generated\\window-wall-20261028\\repaired\\model.glb",
+  "source_sha256": "0c1f29ad02cc60adf1176f1f2d13674ba4cc1ff2453cee4843720b3405494c98",
+  "sha256": "4b976c9d91710b3a2ccb99a77bc889219633a1bfc379d6a3e0cdcd778eb88615",
+  "bytes": 1109960,
+  "source_triangles": 33450,
+  "triangles": 18000,
+  "topology": [
+    {
+      "boundary_edges": 0,
+      "non_manifold_edges": 0
+    }
+  ],
+  "dimensionsMetres": [
+    4,
+    4,
+    0.42
+  ],
+  "frontDirection": "+Z",
+  "backPlane": -0.12,
+  "sillFrontPlane": 0.3,
+  "preparation": "Welded positional seams before reduction; scaled to 4m bay; planar joining ends; 1024px embedded JPEG textures; reimported surface checks. Six missing glazing centers restored; original glass border flattened and normals corrected; joining plaster strips flattened. All repair artwork samples the original ImageGen reference; no raster painting or renderer masking.",
+  "visual_review": {
+    "result": "Accepted final candidate-v3: complete glazing, closed surfaces, matching repeated joining strips, framing and sill depth. Some stylized source joinery irregularity remains at close range.",
+    "blender": "5.1.2 Cycles CPU: front, rear, left, right, top and underside",
+    "blender_evidence": "assets/generated/window-wall-20261028/candidate-v3/*.png",
+    "game_evidence": "build/evidence/window-wall/*.png",
+    "game_renderers": [
+      "WebGL 2",
+      "WebGPU"
+    ],
+    "game_views": [
+      "default",
+      "close",
+      "left",
+      "right",
+      "overhead"
+    ],
+    "hardware_performance": "Not assessed"
+  },
+  "task_id": "e6cdee99-58fa-40e6-a2ea-c1f41ddc9b41",
+  "credits_used": 60,
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 50000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  },
+  "reference_notes": {
+    "tool": "built-in ImageGen",
+    "use_case": "stylized-concept",
+    "prompt": "Single isolated modular interior window-wall bay for a premium warm Scandinavian cafe dollhouse game. One square architectural wall module, 4 metres wide, 4 metres tall and 0.24 metres thick. Warm oat plaster #F3E9D2 above forest-green #243C32 recessed rectangular paneled wainscoting, with the wainscoting cap at 1.33 metres above the floor. Restrained honey-oak #B98250 cap rail and baseboard. One centered tall rectangular oak sash window, approximately 2.65 metres wide by 2.15 metres tall, sill at 1.5 metres. Six evenly arranged panes in two columns and three rows. Proper thick dimensional beveled oak casing, inset sash and mullions, deep plaster window reveals, a substantial projecting oak sill with rounded lip. Muted pale blue-grey glass with restrained broad soft reflections; no bright cyan, no painted exterior scenery. Coherent joinery, straight parallel edges, real wall depth, fully finished side and back surfaces. Flat butt-joining outer ends, no full-height outside perimeter trim, designed to repeat horizontally without doubled end posts. Entire single module visible in a shallow front three-quarter view showing the front and right thickness, neutral diffuse studio light, plain very light grey background with generous margins. Matte stylized materials, quiet fine plaster variation and broad subtle wood grain, clean medium detail and readable geometry. No floor platform, adjoining wall, furniture, plants, room, text, logo, labels, collage, extra objects, dramatic shadows or distress.",
+    "sources": [
+      "design.md",
+      "current cafe window-wall visual inspection"
+    ],
+    "intendedDimensionsMetres": [
+      4,
+      4,
+      0.24
+    ],
+    "placement": "Three matching bays across the existing 12-metre back wall; keep the existing side wall.",
+    "review": "ImageGen reference visually inspected: complete isolated bay, six coherent panes, dimensional oak framing and sill, straight joining edges, palette and proportions accepted. Tripo final-export acceptance remains pending."
+  },
+  "reference_sha256": "2b48c69b8c41d79ed0f2b51fccb0d454677ddb17470c3865ddc80f9c614839d4",
+  "raw_sha256": "50a564d9555752486b34c56ae2efedf2d47f579ce4c5a302bbc9235a6f84c559",
+  "master_sha256": "08c23086cdd574e8b5827539e8b24d788a29b822fb2e7d6eb27aa65e11899a9b",
+  "repair": {
+    "removed_fins": 3,
+    "removed_tunnel_faces": 879,
+    "glazing_contours": [
+      {
+        "edges": 20,
+        "bounds": [
+          [
+            0.1590677946805954,
+            0.9574804902076721
+          ],
+          [
+            0.11453139036893845,
+            0.11546402424573898
+          ],
+          [
+            1.5951133966445923,
+            2.098832368850708
+          ]
+        ]
+      },
+      {
+        "edges": 28,
+        "bounds": [
+          [
+            -0.9497584700584412,
+            -0.1957923173904419
+          ],
+          [
+            0.10186325013637543,
+            0.10526832938194275
+          ],
+          [
+            1.5641661882400513,
+            2.097658157348633
+          ]
+        ]
+      },
+      {
+        "edges": 31,
+        "bounds": [
+          [
+            -0.9605148434638977,
+            -0.1924249529838562
+          ],
+          [
+            0.1014409214258194,
+            0.10450419038534164
+          ],
+          [
+            2.9068737030029297,
+            3.526301622390747
+          ]
+        ]
+      },
+      {
+        "edges": 22,
+        "bounds": [
+          [
+            0.23845648765563965,
+            0.9758976101875305
+          ],
+          [
+            0.11424988508224487,
+            0.115000881254673
+          ],
+          [
+            2.1846542358398438,
+            2.7941672801971436
+          ]
+        ]
+      },
+      {
+        "edges": 24,
+        "bounds": [
+          [
+            -0.9628028273582458,
+            -0.15018567442893982
+          ],
+          [
+            0.11434368789196014,
+            0.11514955759048462
+          ],
+          [
+            1.5702030658721924,
+            2.0982234477996826
+          ]
+        ]
+      },
+      {
+        "edges": 35,
+        "bounds": [
+          [
+            0.14646023511886597,
+            0.9672232270240784
+          ],
+          [
+            0.1018528863787651,
+            0.10504642874002457
+          ],
+          [
+            2.192023992538452,
+            2.818680763244629
+          ]
+        ]
+      },
+      {
+        "edges": 29,
+        "bounds": [
+          [
+            0.15152984857559204,
+            0.9307969808578491
+          ],
+          [
+            0.1018776148557663,
+            0.10523132979869843
+          ],
+          [
+            1.6441301107406616,
+            2.0984208583831787
+          ]
+        ]
+      },
+      {
+        "edges": 32,
+        "bounds": [
+          [
+            -0.9603703618049622,
+            -0.1865568608045578
+          ],
+          [
+            0.10165002197027206,
+            0.10447531938552856
+          ],
+          [
+            2.191160202026367,
+            2.816833972930908
+          ]
+        ]
+      },
+      {
+        "edges": 28,
+        "bounds": [
+          [
+            -0.9870668649673462,
+            -0.1824525147676468
+          ],
+          [
+            0.11428652703762054,
+            0.11517038196325302
+          ],
+          [
+            2.188764810562134,
+            2.7993323802948
+          ]
+        ]
+      },
+      {
+        "edges": 33,
+        "bounds": [
+          [
+            0.20563964545726776,
+            0.9670699834823608
+          ],
+          [
+            0.10177095234394073,
+            0.1052219495177269
+          ],
+          [
+            2.899409055709839,
+            3.511253595352173
+          ]
+        ]
+      },
+      {
+        "edges": 28,
+        "bounds": [
+          [
+            -0.97297203540802,
+            -0.2034556120634079
+          ],
+          [
+            0.11365696042776108,
+            0.11497189104557037
+          ],
+          [
+            2.895629405975342,
+            3.5132555961608887
+          ]
+        ]
+      },
+      {
+        "edges": 23,
+        "bounds": [
+          [
+            0.16324736177921295,
+            0.9629197716712952
+          ],
+          [
+            0.11387767642736435,
+            0.11501070111989975
+          ],
+          [
+            2.9044196605682373,
+            3.512481689453125
+          ]
+        ]
+      }
+    ],
+    "glazing_caps": 13,
+    "boundary_edges": 0,
+    "non_manifold_edges": 0
+  },
+  "tools": [
+    "tools/repair-cafe-window-wall.py",
+    "tools/prepare-cafe-window-wall.py"
+  ]
+}

@@ -1,0 +1,40 @@
+const {chromium}=require('playwright');
+const fs=require('node:fs/promises');
+const assert=require('node:assert/strict');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.BROWSER_EXECUTABLE,headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const evidence=[];
+ try{for(const backend of (process.env.CAFE_BACKENDS||'webgl2,automatic').split(',')){
+  const page=await browser.newPage({viewport:{width:1030,height:764}}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.addInitScript(()=>Object.defineProperty(window,'devicePixelRatio',{value:.25,configurable:true}));
+  await page.route('**/assets/models/**',r=>r.abort());
+  const wait=async(fn,arg)=>{try{return await page.waitForFunction(fn,arg,{timeout:120000,polling:30});}catch(e){console.error(await page.evaluate(()=>({game:window.cafeState,guests:window.cafeDemandState?.guests,occupancy:window.cafeOccupancyState,save:document.getElementById('save-status')?.textContent,error:window.cafeHostError})));throw e;}};
+  await page.goto(`http://localhost:4173/?backend=${backend}`);
+  await wait(()=>window.cafeAssetsReady&&window.cafeInspectorState);
+  const fixture=await fs.readFile('build/evidence/dining-fixtures/dining.bin');
+  await page.evaluate(data=>{localStorage.setItem('cafegame.shift.v1',data);Module._cafe_command(4);},fixture.toString('base64'));
+  await wait(()=>document.getElementById('save-status').textContent.startsWith('Saved shift restored'));
+  assert.equal(await page.evaluate(()=>cafeOccupancyState.dining),2);
+  const baseline=await page.evaluate(()=>cafeInspectorState.report.timeMs);
+  await wait(t=>cafeInspectorState.report.timeMs>=t+8000,baseline);
+  assert.equal(await page.evaluate(()=>cafeOccupancyState.dining),2,'All guests must stay longer than the old eight-second visit');
+  assert.equal(await page.evaluate(()=>cafeOccupancyState.seated),2);
+  await page.evaluate(()=>Module._cafe_command(2));await wait(()=>cafeState.paused);
+  await page.evaluate(()=>Module._cafe_command(3));await wait(()=>document.getElementById('save-status').textContent.startsWith('Shift saved'));
+  await page.evaluate(()=>Module._cafe_command(4));await wait(()=>document.getElementById('save-status').textContent.startsWith('Saved shift restored'));
+  assert.equal(await page.evaluate(()=>cafeOccupancyState.dining),2);
+  await page.evaluate(()=>Module._cafe_command(2));await wait(()=>!cafeState.paused);
+  await wait(()=>cafeOccupancyState.dining===1);
+  const afterEspresso=await page.evaluate(()=>({elapsed:cafeInspectorState.report.timeMs,guests:cafeDemandState.guests,occupancy:cafeOccupancyState}));
+  assert.ok(afterEspresso.guests.some(g=>g.id===2&&g.phase===3),'The drink-and-croissant guest must remain after the espresso guest leaves');
+  assert.ok(!afterEspresso.guests.some(g=>g.id===1&&g.phase===3));
+  await wait(t=>cafeInspectorState.report.timeMs>=t+25000,baseline);
+  assert.ok(await page.evaluate(()=>cafeDemandState.guests.some(g=>g.id===2&&g.phase===3)),'The pastry visit must still occupy the table after 25 seconds');
+  assert.ok(await page.evaluate(()=>cafeOccupancyState.seated>=1));
+  await page.mouse.move(1,1);await page.keyboard.press('Escape');await page.screenshot({path:`build/evidence/dining-stay-${backend}.png`});
+  assert.deepEqual(errors,[]);evidence.push({backend,bothPastEightSeconds:true,espressoLeavesFirst:true,pastryStillSeatedAt25Seconds:true,saveLoad:true,afterEspresso,errors});
+  console.log(`${backend}: longer visits, order-specific departure, occupied table and save/load passed`);
+  await page.close();
+ }}finally{await fs.writeFile(`build/evidence/dining-stay-${process.env.CAFE_BACKENDS||'all'}.json`,JSON.stringify(evidence,null,2));await Promise.race([browser.close(),new Promise(r=>setTimeout(r,3000))]);}
+})().then(()=>process.exit(0)).catch(e=>{console.error(e);process.exit(1)});

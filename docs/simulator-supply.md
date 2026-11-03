@@ -1,0 +1,17 @@
+# Stage 10: supply and restocking
+
+The browser starts with four beans at the machine and an empty 24-bean storeroom. Order 12 beans schedules a delivery eight simulation seconds later and reserves its storage immediately. Only one delivery may be pending. Restock machine atomically moves up to four available beans from storage to the machine. No ingredients appear at the machine until transferred, and held production inputs cannot be moved.
+
+Enable auto supply transfers four beans when machine total stock reaches one or less, and orders storeroom stock up to twelve when inventory position (stock plus incoming capacity) reaches four or less. Pending deliveries count toward the target, preventing repeated orders each frame. Manual cancellation releases the delivery reservation and turns automation off. Global pause and tab suspension freeze delivery time; a staff break does not stop the supplier.
+
+The supplier panel shows machine stock, storeroom capacity, incoming reserved space, delivery countdown and automation. Supplier samples are explicitly free in this prototype. Supplier prices, purchasing accounts, wages, spoilage, delivery vehicles and physical hauling tasks are future work; manual restocking is an immediate player action.
+
+The portable engine adds Runtime::transfer and optional engine/simulator/supply.hpp. SupplyBoard owns supplier-order records and output-capacity reservations, delivers once after an explicit poll against Runtime simulation time, supports cancellation/retirement, bounded record counts, typed snapshot validation and threshold/target reorder policy. It owns no scene, clock, IO, wallet or provider credentials. Its Runtime must outlive it; the host must not externally complete its reservations. Core restore invalidates old boards. See WebEngine docs/simulator-supply.md for the API contract.
+
+Cafe envelope schema 4 appends storeroom identity, automation, supplier sequence and pending delivery/hold/deadline. Candidate restore validates those records against core reservations before publishing the entire session. Formats 1-3 migrate with an empty storeroom and automation off; current machine stock is preserved. Core snapshot schema 1 and the renderer pin are unchanged.
+
+Validation (2026-10-25): the complete cafe_game Wasm build passed. Cafe simulation CTest 1/1 and engine standalone CTest 4/4 passed under Node; the suite includes supply, stock-transfer and invalid-restore cases. The standalone engine contracts passed in Edge 156 with no browser errors. The full rendered game smoke passed forced WebGL 2 and automatic software fallback, exercising pending-delivery pause/save/restore, cancellation, capacity reservation, manual restocking, auto reorder, staff workflows, cleaning, seating and payment. The supply screenshot was visually inspected. All four offline tool tests, ten bundled-source hashes, JavaScript syntax and whitespace checks passed. Canonical/bundled source and all three actual engine-skill copies were checked.
+
+Native Windows/Linux execution, full Linux cloud validation, hardware WebGPU and physical mobile acceptance were not run. No native compiler was available in the current shell; CI remains configured for native Windows/Linux. Changes are uncommitted; no renderer pin update, paid asset generation, commit or push was performed.
+
+Stage 11 supersedes the free-sample policy for new orders: beans are prepaid at 1.00 each and pending cancellations are refunded. See [economy integration](simulator-economy.md); schema-4 deliveries migrate without retroactive charges.

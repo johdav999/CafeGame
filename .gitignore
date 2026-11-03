@@ -8,5 +8,10 @@ CMakeUserPresets.json
 *.user
 .DS_Store
 Thumbs.db
+cafe-shift.save
 assets/generated/*
 !assets/generated/.gitkeep
+
+/.secrets/
+__pycache__/
+*.pyc

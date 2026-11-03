@@ -24,22 +24,43 @@ if(NOT TARGET WebEngine::Browser)
   message(FATAL_ERROR "WebEngine checkout must provide WebEngine::Browser; use the pinned revision.")
 endif()
 
+# A reproducible source distribution of the unreleased portable engine module.
+# The pinned renderer/runtime remains unchanged. Explicit newer engine checkouts
+# may supply the target themselves.
+if(NOT TARGET WebEngine::Simulator)
+  set(WEBENGINE_BUILD_SIMULATOR ON CACHE BOOL "Build simulator" FORCE)
+  add_subdirectory(vendor/webengine-simulator/simulator simulator EXCLUDE_FROM_ALL)
+endif()
+
 add_executable(cafe_game src/browser_main.cpp src/cafe_scene.cpp)
+option(CAFE_GARDEN_DEVELOPMENT_FIXTURE "Enable owned Garden Cafe fixture; never distribute this build" OFF)
+if(CAFE_GARDEN_DEVELOPMENT_FIXTURE)
+  target_compile_definitions(cafe_game PRIVATE CAFE_GARDEN_DEVELOPMENT_FIXTURE=1)
+endif()
 target_include_directories(cafe_game PRIVATE src)
-target_link_libraries(cafe_game PRIVATE WebEngine::Browser engine_audio_browser engine_assets_browser)
+target_link_libraries(cafe_game PRIVATE WebEngine::Browser engine_audio_browser engine_assets_browser WebEngine::Simulator engine_ai)
 target_compile_options(cafe_game PRIVATE -Wall -Wextra -Wpedantic -fexceptions)
 target_link_options(cafe_game PRIVATE
   -sALLOW_MEMORY_GROWTH=1 -sSTACK_SIZE=2097152 -sENVIRONMENT=web
   -sEXIT_RUNTIME=0 -sFILESYSTEM=0
-  "-sEXPORTED_FUNCTIONS=['_main','_cafe_command','_cafe_suspend','_cafe_shutdown']")
+  "-sEXPORTED_FUNCTIONS=['_main','_malloc','_free','_cafe_viewport','_cafe_camera','_cafe_motion','_cafe_model','_cafe_sound','_cafe_audio','_cafe_command','_cafe_service','_cafe_scenario','_cafe_prepare','_cafe_garden_story','_cafe_guest','_cafe_guest_seating','_cafe_supply','_cafe_staff','_cafe_campaign','_cafe_clock','_cafe_equipment','_cafe_layout','_cafe_layout_preview','_cafe_floor_pick','_cafe_service_pick','_cafe_staff_pick','_cafe_staff_move','_cafe_staff_deselect','_cafe_suspend','_cafe_shutdown']")
 set_target_properties(cafe_game PROPERTIES SUFFIX ".js"
   RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/site")
-add_custom_command(TARGET cafe_game POST_BUILD
+# Stage presentation/assets even when the C++ executable does not need relinking.
+get_target_property(_engine_source engine_core SOURCE_DIR)
+add_custom_target(cafe_web_assets
   COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/web" "${CMAKE_BINARY_DIR}/site"
-  COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/assets" "${CMAKE_BINARY_DIR}/site/assets"
+  COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_BINARY_DIR}/site/assets"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/assets/models" "${CMAKE_BINARY_DIR}/site/assets/models"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/assets/audio" "${CMAKE_BINARY_DIR}/site/assets/audio"
+  COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/assets/ui" "${CMAKE_BINARY_DIR}/site/assets/ui"
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_SOURCE_DIR}/assets/manifest.json" "${CMAKE_SOURCE_DIR}/assets/provenance.md" "${CMAKE_BINARY_DIR}/site/assets"
+  COMMAND ${CMAKE_COMMAND} "-DINPUT=${_engine_source}/web/audio-system.js" "-DOUTPUT=${CMAKE_BINARY_DIR}/site/audio-system.js" -P "${CMAKE_SOURCE_DIR}/tools/stage-audio.cmake"
+  COMMENT "Staging CafeGame browser presentation and assets")
+add_dependencies(cafe_game cafe_web_assets)
+add_custom_command(TARGET cafe_game POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_if_different "$<TARGET_FILE:asset_decode_worker>" "${CMAKE_BINARY_DIR}/site/asset_decode.js"
   COMMAND ${CMAKE_COMMAND} -E copy_if_different "$<TARGET_FILE_DIR:asset_decode_worker>/asset_decode.wasm" "${CMAKE_BINARY_DIR}/site/asset_decode.wasm")
-get_target_property(_engine_source engine_core SOURCE_DIR)
 foreach(_license IN ITEMS
     "third_party/cgltf/LICENSE" "third_party/ufbx/LICENSE"
     "third_party/stb/LICENSE" "third_party/meshoptimizer/LICENSE.md")

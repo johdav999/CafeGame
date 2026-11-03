@@ -1,0 +1,205 @@
+{
+  "provider": "OpenAI built-in ImageGen",
+  "date": "2026-10-27",
+  "prompts": {
+    "icons": "Use case: stylized-concept. Asset type: production game UI icon sprite atlas, ONE transparent PNG, square 1536x1536 if possible. Create a precise 5 columns by 4 rows regular grid of 20 separate centered icons, one per equal cell with wide transparent gutters, no visible grid, NO WORDS, NO LETTERS, NO NUMBERS. Warm Scandinavian miniature cafe game, beautifully hand-painted gouache and softly sculpted enamel, warm oat ceramic, forest green, sage, honey oak and restrained brass, expressive tactile highlights, simple silhouettes readable at 24px, no flat SVG aesthetic. Each icon occupies 65% of its own cell, all isolated with actual transparent background, nothing crossing cell boundaries. Exact row-major order: row1: espresso demitasse and saucer, tall americano ceramic mug, layered latte in clear glass, tea cup with tea bag tag, golden croissant. row2: three stacked gold coins, warm brass sun, cafe serving tray with cup, wooden cafe chair, closed forest green menu book without writing. row3: clipboard with one large check mark, round brass clock, small espresso machine, bold forest green check mark, open wooden doorway. row4: wooden supply crate, friendly neutral staff bust portrait wearing sage apron, cleaning brush and folded cloth, pause symbol two brass bars, play symbol brass triangle. Front three-quarter objects, consistent upper left lighting. Transparent alpha outside every object. No panels or backgrounds, no checkerboard drawn into image.",
+    "panel": "Use case: stylized-concept. Asset type: production nine-slice UI panel skin for cozy Scandinavian cafe game. ONE large blank rectangular panel centered, straight-on orthographic, aspect ratio 1:1 square canvas. Rounded corners, softly raised warm oat cream paperboard with subtle natural paper fibers, thin elegant double honey brass and sage inset edge, beautifully hand-painted tactile gouache shading, restrained soft shadow. The panel occupies 94% canvas width and height, small transparent exterior margin. Broad perfectly quiet pale cream center for dark readable HTML text; center is 85% area, NO text, NO icons, NO ornaments, NO folds, NO coffee stains, no perspective. Border depth uniform, suitable for stretching via nine-slice. Palette oat #F3E9D2, honey muted #B98250, forest hint #243C32. Actual transparent alpha outside rounded panel. High polish game interface artwork, not flat vector.",
+    "button": "Use case: stylized-concept. Asset type: production nine-slice primary button skin for cozy Scandinavian cafe game. ONE blank forest green rectangular button centered on transparent canvas, landscape aspect 3:1. Straight-on orthographic. Rounded corners, tactile painted enamel and subtle fine grain, a thin warm brass rim and softly beveled edge, upper edge subtle sage highlight, lower edge darker forest depth, tiny soft shadow. Flat empty dark forest green #243C32 center covering 80% of face for legible cream HTML labels; NO text, NO symbols, NO icons, NO ornaments. Button fills 94% canvas width and 80% height. Warm sophisticated Scandinavian miniature cafe art direction, softly hand-painted gouache material, not glossy plastic or flat SVG. Actual transparent alpha outside the button. Uniform corner treatment suitable for nine-slice scaling.",
+    "attractiveness": "Production game UI icon, one small sculpted warm terracotta heart nestled between two small sage-green leaves with restrained brass edging. Symbolizes a welcoming attractive cafe. Cozy Scandinavian cafe game, hand-painted gouache and enamel, tactile matte highlights, simple bold silhouette readable at 24px. Centered complete object fills 75% of square canvas, actual transparent background, no text, no numbers, no badge or panel, no other objects. Match oat paper and forest green UI palette.",
+    "beans": "One production game UI icon: a small open oat linen sack filled with rich roasted brown coffee beans, with three individual coffee beans beside it. Cozy Scandinavian cafe game, hand-painted gouache, tactile matte highlights and subtle brass-colored seam details, simple bold readable silhouette at 28px. Complete object centered, 75% of square canvas, actual transparent alpha background. No text, no badge, no lettering, no other objects. Match forest green, cream paper, honey oak and terracotta interface artwork.",
+    "water": "Production game UI inventory icon: a clear glass water carafe filled with pale blue water, a single blue droplet beside it. Cozy Scandinavian cafe game, softly hand-painted gouache, tactile matte highlights, subtle honey brass trim, clear simple silhouette readable at 28 pixels. One complete centered object group filling 70% of a square canvas. Actual transparent alpha background. NO text, no words, no numbers, no badge, no warning marker, no UI panel. Palette oat cream, forest green, sage, honey oak. Match a painted coffee bean sack icon.",
+    "milk": "Production game UI inventory icon: a small cream ceramic milk pitcher with a short stream of white milk and a tiny sage leaf detail. Cozy Scandinavian cafe game, softly hand-painted gouache, tactile matte highlights, subtle honey brass trim, clear simple silhouette readable at 28 pixels. One complete centered object group filling 70% of a square canvas. Actual transparent alpha background. NO text, no words, no numbers, no badge, no warning marker, no UI panel. Palette oat cream, forest green, sage, honey oak. Match a painted coffee bean sack icon.",
+    "tea-leaves": "Production game UI inventory icon: a small open oat paper pouch full of loose green tea leaves, a few tea leaves beside it. Cozy Scandinavian cafe game, softly hand-painted gouache, tactile matte highlights, subtle honey brass trim, clear simple silhouette readable at 28 pixels. One complete centered object group filling 70% of a square canvas. Actual transparent alpha background. NO text, no words, no numbers, no badge, no warning marker, no UI panel. Palette oat cream, forest green, sage, honey oak. Match a painted coffee bean sack icon.",
+    "pastry-stock": "Production game UI inventory icon: a small wooden bakery tray holding two golden unbaked croissants. Cozy Scandinavian cafe game, softly hand-painted gouache, tactile matte highlights, subtle honey brass trim, clear simple silhouette readable at 28 pixels. One complete centered object group filling 70% of a square canvas. Actual transparent alpha background. NO text, no words, no numbers, no badge, no warning marker, no UI panel. Palette oat cream, forest green, sage, honey oak. Match a painted coffee bean sack icon.",
+    "build-table": "Production cozy cafe building-menu icon: one small round honey-oak cafe table with two sage upholstered wooden chairs, complete table set. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-station": "Production cozy cafe building-menu icon: one compact forest green espresso preparation bench with a small espresso machine, cream worktop and brass details. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-shelf": "Production cozy cafe building-menu icon: one honey-oak open storage shelf with neatly arranged ingredient jars and small oat sacks. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-sage-plant": "Production cozy cafe building-menu icon: one tall upright snake plant with variegated sage green sword leaves in a simple sage green cylindrical pot. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-terracotta-plant": "Production cozy cafe building-menu icon: one small rubber plant with rounded dark forest green leaves in a warm terracotta flower pot. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-brass-lamp": "Production cozy cafe building-menu icon: one elegant slender brass floor lamp with a warm oat conical shade, complete lamp including base. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-forest-lamp": "Production cozy cafe building-menu icon: one elegant slender brass floor lamp with a deep forest green conical shade, complete lamp including base. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "build-speed-kit": "Production cozy cafe building-menu icon: one small espresso machine upgrade kit, a brass portafilter and pressure gauge with a tiny sage green lightning emblem. One complete freestanding object group centered on a square canvas with generous transparent padding, object fills 74% of canvas. Consistent three-quarter view. Warm Scandinavian dollhouse game, polished hand-painted gouache miniature, matte tactile surfaces, soft upper-left light, oat cream, honey oak, forest green, sage and restrained brass. Clear readable silhouette at 64 pixels. Actual transparent alpha background. NO text, no letters, no numbers, no labels, no panel, no frame, no grid, no environmental floor.",
+    "service-clean-alert": "Production cozy cafe game UI service icon: a small forest green espresso machine group head with a soft oat cleaning cloth and a little cleaning brush, a subtle clean sparkle. One complete centered object group, warm Scandinavian miniature style, softly hand-painted gouache, matte tactile highlights, clear silhouette readable at 28px. Oat cream, forest green, sage, honey oak and warm brass palette. Generous transparent padding, object fills 72% of square canvas. Actual transparent alpha background. No words, no lettering, no numbers, no panel, no frame, no warning badge.",
+    "service-repair-alert": "Production cozy cafe game UI service icon: a brass wrench crossed with a small round pressure gauge, forest green handle and restrained terracotta gauge needle. One complete centered object group, warm Scandinavian miniature style, softly hand-painted gouache, matte tactile highlights, clear silhouette readable at 28px. Oat cream, forest green, sage, honey oak and warm brass palette. Generous transparent padding, object fills 72% of square canvas. Actual transparent alpha background. No words, no lettering, no numbers, no panel, no frame, no warning badge.",
+    "service-refill-alert": "Production cozy cafe game UI service icon: a small open honey-oak ingredient storage crate beside a cream work-area canister, with one clear curved brass arrow pointing from the crate down into the canister. One complete centered object group, warm Scandinavian miniature style, softly hand-painted gouache, matte tactile highlights, clear silhouette readable at 28px. Oat cream, forest green, sage, honey oak and warm brass palette. Generous transparent padding, object fills 72% of square canvas. Actual transparent alpha background. No words, no lettering, no numbers, no panel, no frame, no warning badge.",
+    "service-waiting": "Use case: stylized-concept. Asset type: a single transparent game HUD icon for a warm Scandinavian cafe simulator, meaning 'guest waiting for service'. Primary request: one very clear chunky brass reception/service bell on a dark forest-green base, with one small ivory clock face overlapping its lower-right corner. The bell is the dominant silhouette; the simple clock has dark espresso hands and no numerals. Premium softly painted 3D miniature illustration matching warm honey brass, forest green #243C32 and oat ivory #F3E9D2 game icons. Strong clean outline, restrained broad highlights, front three-quarter view, centered with modest transparent margins. Designed to be immediately readable at 28 to 36 pixels. Only the bell and clock, no people, coffee cups, plates, words, letters, numbers, labels, borders, card, backdrop, extra symbols, multiple variations, watermark or cast shadow outside the object. Actual transparent background, crisp alpha edges.",
+    "takeaway": "Use case: stylized-concept. Asset type: single production transparent HUD icon for a warm Scandinavian cafe game, meaning TAKEAWAY CUSTOMER. One chunky ivory paper takeaway coffee cup with an unmistakable forest-green plastic travel lid and a wide forest-green sleeve. A single bold warm-brass right-pointing exit arrow overlaps the lower-right of the cup, clearly communicating coffee to go. Simple dominant silhouette and broad clean shapes readable at 28\u201336 pixels; softly painted premium 3D miniature, restrained honey-brass highlights, oat #F3E9D2, forest #243C32, espresso outlines. Centered isolated complete cup and arrow, generous but modest transparent margin. No saucer, no ceramic handle, no people, bell, clock, shopping bag, scenery, text, letters, numbers, brand, watermark, decorative frame, tile or background. Actual transparent alpha with crisp clean edges. Match cozy cafe game painted utility icons."
+  },
+  "processing": "Cropped the generated atlas into 20 icons; trimmed transparent margins and resized to WebP, preserving alpha. Panels and buttons use CSS nine-slice rendering. Text remains HTML. Crops were tightened to the principal alpha-connected object bounds to exclude neighboring atlas objects; portrait was corrected with ImageGen.",
+  "masters": "assets/generated/ui-imagegen/",
+  "portraitCorrectionPrompt": "Edit this small game icon. Preserve the friendly painted staff bust with sage apron exactly in spirit and palette, but remove the unwanted fragment of the clock above her head and all stray colored pixels around the silhouette. Center the complete bust with tidy smooth anti-aliased edges, clear transparent padding around it. Actual transparent background. No other objects or text.",
+  "files": {
+    "americano.webp": {
+      "bytes": 14812,
+      "sha256": "3efbd9f848d0f9c11c8893e60506c4f0eb4ff0928279773408e1620e6a0fa356"
+    },
+    "build.webp": {
+      "bytes": 15016,
+      "sha256": "47e3c7869316dccd092b6c9623826105d51b7d4b779cee4d7cf6951608578016"
+    },
+    "button.webp": {
+      "bytes": 27332,
+      "sha256": "8dce49e01e8f0dfa47b8f8adc6040e55c8ca00bbacbf814b5e7d909025395f7c"
+    },
+    "check.webp": {
+      "bytes": 9848,
+      "sha256": "cd1e2b529599e0e09ce0e07dc32acdda83bbebc45e80ad93702b45e6602f70d3"
+    },
+    "clean.webp": {
+      "bytes": 12644,
+      "sha256": "cf2bed49e4c6a764d77f9e749c2ca8266ae2c52d4426343b436965137a0a4274"
+    },
+    "clock.webp": {
+      "bytes": 14660,
+      "sha256": "79480aabe4366a1da0ba5201dd1fc6274da85a60cfa6f56c8a2af1b7f0e6837b"
+    },
+    "coin.webp": {
+      "bytes": 16128,
+      "sha256": "099f3cfc07c9d8576fd4ac25c2aa533f61a0e3318c45f765184117b03d8dc9d1"
+    },
+    "croissant.webp": {
+      "bytes": 15774,
+      "sha256": "e72f211d9923dcedd3b2af258412ec861ba6b72bfbecd5e3a70e30cbe46b6c62"
+    },
+    "door.webp": {
+      "bytes": 11718,
+      "sha256": "f008592201400a8290101db416c36d34347ae6c0d9b91fc4fa82be0105d613fc"
+    },
+    "espresso.webp": {
+      "bytes": 13778,
+      "sha256": "00fb512de9de0ddc133604f2bb72ee5ce0007fdcf01afd5fcfbb45fb678ba95b"
+    },
+    "goal.webp": {
+      "bytes": 11268,
+      "sha256": "be33223f71425b814e54312b9bd8a9225c22d8da4686f7718d22eea1505ccb10"
+    },
+    "latte.webp": {
+      "bytes": 14006,
+      "sha256": "bec968fe635ef7e44ce556cf1e36b999ff25177ab622dca21634dd04d3b1b160"
+    },
+    "menu.webp": {
+      "bytes": 13128,
+      "sha256": "c1255dc027d16067efc8416059c6150babc60c02417930254ea594f059e13968"
+    },
+    "panel.webp": {
+      "bytes": 43596,
+      "sha256": "e06101e072ed71482b61dcbe605911628fa382d88b1e4964d5103f2688cbc183"
+    },
+    "pause.webp": {
+      "bytes": 10696,
+      "sha256": "3ba3230848af80adb5645507a303ca05f09cd59e3fbf70c3094a06fda94d87ff"
+    },
+    "person.webp": {
+      "bytes": 13472,
+      "sha256": "01822d192ae357bc87a9ad919cef5c7e84c0edee079cb9b16d9fdbef424e6eb3"
+    },
+    "play.webp": {
+      "bytes": 10890,
+      "sha256": "126d4c4304d2fb5e0af09fc4a76ac8ed4af08623ab95e42131a417aed8f5b14c"
+    },
+    "serve.webp": {
+      "bytes": 11516,
+      "sha256": "2319f3724ceae97c481509a48f202c10d74efd60dd01da6bcf6b98cfade5e6a9"
+    },
+    "stock.webp": {
+      "bytes": 14950,
+      "sha256": "1f5102921aad9b3fa06f495dc355a74770c4b26ee9413bae5154242d0c8dd209"
+    },
+    "sun.webp": {
+      "bytes": 17310,
+      "sha256": "52f04b115b2b3b3888e677cee80ed12f988473b449fdc71ce75f586a982318da"
+    },
+    "tea.webp": {
+      "bytes": 13990,
+      "sha256": "d1d293e7d0c677683a6d530aa03a4a0759ab8ed19186b6611df47a2475a0d095"
+    },
+    "work.webp": {
+      "bytes": 14650,
+      "sha256": "0696303ebb1d22dc51de6801ecfffe94d736a1d2d96643173fd954bcf8261e14"
+    },
+    "attractiveness.webp": {
+      "bytes": 11160,
+      "sha256": "acfa58c21e581e7501927b6c698c40a91c15883d3e46db840bdd2123ac928217"
+    },
+    "beans.webp": {
+      "bytes": 14196,
+      "sha256": "8f4afe6830076b7c947e1e471dca497b2b1563b78ed43c674f1440ba1e1a5d06"
+    },
+    "water.webp": {
+      "bytes": 14566,
+      "sha256": "920a0fb0ae40b39fd5721ca9eb3ee4b85cbe4118dd4a5b0311519d0743c8a24a"
+    },
+    "milk.webp": {
+      "bytes": 10340,
+      "sha256": "589579ade01bdb5526a39e96ab9e7d6e823af62e8ca6caa977e1dce9770fe939"
+    },
+    "tea-leaves.webp": {
+      "bytes": 13966,
+      "sha256": "110f04ba573b287b52ed96681468b9373f740b7dea7a07277aaf59f72d2a347e"
+    },
+    "pastry-stock.webp": {
+      "bytes": 11794,
+      "sha256": "899c0744a3b0bf418bb51f33a730a97bce5449b3d42e19bdb75a7db9eb6acf89"
+    },
+    "build-table.webp": {
+      "bytes": 25418,
+      "sha256": "edcafcd436fca5f11dde873edb13994cd307626e090a8f64409be71951d269a8"
+    },
+    "build-station.webp": {
+      "bytes": 23554,
+      "sha256": "0e4a110e24fd7524aed43570ca2b80d663bd9027932a0c77ad18b65d6f878026"
+    },
+    "build-shelf.webp": {
+      "bytes": 26850,
+      "sha256": "13e2f0189db069036bd23d329249402bdfc7eb725ff70eb3e38aaf7122e92b31"
+    },
+    "build-sage-plant.webp": {
+      "bytes": 14348,
+      "sha256": "375d3bf243d0757cdffb5d9c77ac9050660e17c5d7c0fcab997249a1f47f0e83"
+    },
+    "build-terracotta-plant.webp": {
+      "bytes": 17370,
+      "sha256": "bcb002b164d3349b260e443da930ec1f47bddc997ddf16e8c66ad1dd3ff73fa3"
+    },
+    "build-brass-lamp.webp": {
+      "bytes": 7098,
+      "sha256": "6ba38c3868a22034a2c9d61fc50265055b64bc1f5d7ff6c16e314e473780f9b3"
+    },
+    "build-forest-lamp.webp": {
+      "bytes": 6868,
+      "sha256": "8dc01343dcd4cf051d804a5a9b44c5353d08e9b6a2aac1e74f8563ad5b29db93"
+    },
+    "build-speed-kit.webp": {
+      "bytes": 23448,
+      "sha256": "0dd2390f037cb3856c572e963fbd68e33c1a7b124ea0e08ebb82d83ec5d48ae8"
+    },
+    "service-clean-alert.webp": {
+      "bytes": 13770,
+      "sha256": "6350c407b2a292ecafc7c476e23772f51a12fedd1bab71b53b73654452e3e2da"
+    },
+    "service-repair-alert.webp": {
+      "bytes": 13182,
+      "sha256": "1344f7bd29fd613333540a00af7f915a4177c674418d90540a67142e5da6debf"
+    },
+    "service-refill-alert.webp": {
+      "bytes": 12458,
+      "sha256": "ff99ad1ca088fe57d5e8fe43ed5efdf6b9adee5e153c16211a589cfc8e4bb282"
+    },
+    "service-waiting.webp": {
+      "bytes": 11672,
+      "sha256": "6fbb7a8189015e804db758c2c73910a6ef1e0d428ed293056741680e72a3df86",
+      "provider": "OpenAI built-in ImageGen",
+      "date": "2026-10-29",
+      "master": "assets/generated/ui-service-waiting-20261029/service-waiting.png",
+      "processing": "Proportional resize to 192-pixel maximum and WebP quality 95; original alpha preserved."
+    },
+    "takeaway.webp": {
+      "bytes": 11200,
+      "sha256": "3566a1daaf1c034d3046eb8df22aae05a57b545b6a555e2b94f7ae52c7ea0272",
+      "provider": "OpenAI built-in ImageGen",
+      "date": "2026-10-29",
+      "master": "assets/generated/ui-takeaway-20261029/takeaway.png",
+      "processing": "Proportional resize to 192-pixel maximum and WebP quality 95; generated alpha preserved."
+    }
+  }
+}

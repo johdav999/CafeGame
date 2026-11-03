@@ -6,14 +6,27 @@ permissions:
   contents: read
 jobs:
   tools-and-simulation:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm test
-      - run: g++ -std=c++20 -Wall -Wextra -Werror -Isrc tests/simulation_test.cpp -o /tmp/cafe-test && /tmp/cafe-test
+      - run: node tools/verify-simulator.mjs
+      - run: cmake -S tests -B build/simulation -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build/simulation --config Release --parallel 2
+      - run: ctest --test-dir build/simulation -C Release --output-on-failure
+      - run: npm run balance -- --scenario all --seeds 1,2,3 --seconds 300 --output build/evidence/balance.json
+      - run: npm run stress -- --seconds 21600 --seeds 123,456 --scale 1024 --output build/evidence/stress.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cafe-balance-${{ matrix.os }}
+          path: build/evidence/*.json
+          if-no-files-found: error
   browser:
     runs-on: ubuntu-latest
     steps:

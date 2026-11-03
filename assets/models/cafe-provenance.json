@@ -1,0 +1,278 @@
+[
+  {
+    "name": "coffee-machine",
+    "path": "models/cafe-coffee-machine.glb",
+    "triangles": 8970,
+    "texture_size": 1024,
+    "bytes": 631684,
+    "sha256": "42f571e44e89a344518040b09dd63115982d58d2714cdcec6fb264176cacade0",
+    "source_sha256": "9cda98e7002a0f78fcd8ad41dc73a305324f7298e792cb2777064ed45b630b20",
+    "provider": "Tripo3D",
+    "preparation": "Position seams welded at 1e-6 m before reduction; face normals recalculated; no new boundary edges.",
+    "topology": [
+      {
+        "object": "tripo_node_a42d06a8-cdff-4ba1-a90c-638c4a17bfe8",
+        "boundary_edges_before": 0,
+        "boundary_edges_after": 0,
+        "boundary_length_before": 0,
+        "boundary_length_after": 0
+      }
+    ],
+    "task_id": "a42d06a8-cdff-4ba1-a90c-638c4a17bfe8",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "coffee-machine",
+      "height": 0.48,
+      "prompt": "Use case: stylized-concept. Create a single isolated compact commercial espresso coffee machine reference for a warm Scandinavian cafe dollhouse 3D game. Forest green #243C32 softly beveled body, restrained warm brass #D7AC5B hardware, dark portafilter handle, clearly visible group head, steam wand and drip tray, oat-colored gauge without text. Medium detail chunky readable shapes, matte surfaces, subtle metal, no dense texture noise. Full subject centered with generous margin, elevated front three-quarter view, neutral diffuse studio illumination, plain white background. No cup, other props, lettering, logo, watermark, floor platform or collage. Physically coherent parts suitable for image-to-3D reconstruction.",
+      "source": "C:/Users/EJOHDAV/.codex/generated_images/01a179e7-bc31-74f0-b9e7-a74c6fa16f4a/exec-81383bc2-1657-44d9-9db9-e6662c812216.png",
+      "provider": "built-in ImageGen",
+      "reference_sources": [
+        "design.md",
+        "docs/assets.md"
+      ],
+      "reference_visual_review": "Inspected generated pixels: complete isolated subject, coherent silhouette, palette and parts acceptable for Tripo draft."
+    },
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  },
+  {
+    "name": "espresso-cup",
+    "path": "models/cafe-espresso-cup.glb",
+    "triangles": 1770,
+    "texture_size": 512,
+    "bytes": 97356,
+    "sha256": "9aa758c5a3b96904dcd8482cb1bbb393fe2e6089a685e4f0574727545397e302",
+    "source_sha256": "116df7139bd99d213d37efaab94ebffb4452eba871ee617f17021b7fe3e52f09",
+    "provider": "Tripo3D",
+    "preparation": "Position seams welded at 1e-6 m before reduction; face normals recalculated; no new boundary edges.",
+    "topology": [
+      {
+        "object": "tripo_node_316cfbc6-3b7a-4cd5-aebb-b9853e47c327",
+        "boundary_edges_before": 0,
+        "boundary_edges_after": 0,
+        "boundary_length_before": 0,
+        "boundary_length_after": 0
+      }
+    ],
+    "task_id": "316cfbc6-3b7a-4cd5-aebb-b9853e47c327",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "espresso-cup",
+      "height": 0.065,
+      "prompt": "Use case: stylized-concept. One isolated espresso demitasse cup for a warm Scandinavian cafe dollhouse game. Oat ivory #F3E9D2 ceramic, thick rounded rim and chunky curved single handle with clearly open hole; small dark espresso surface recessed inside with subtle crema. Simple clean matte glaze, stylized softly rounded geometry, no fine texture. Entire cup only, no saucer or spoon. Elevated three-quarter view with handle visible, centered with margin, neutral diffuse lighting, plain white background. No text, logos, collage, other objects or platform. Reference for image-to-3D.",
+      "source": "C:/Users/EJOHDAV/.codex/generated_images/01a179e7-bc31-74f0-b9e7-a74c6fa16f4a/exec-60ca4e80-4319-4160-bc28-a1ff2b48bccb.png",
+      "provider": "built-in ImageGen",
+      "reference_sources": [
+        "design.md",
+        "docs/assets.md"
+      ],
+      "reference_visual_review": "Inspected generated pixels: complete isolated subject, coherent silhouette, palette and parts acceptable for Tripo draft."
+    },
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  },
+  {
+    "name": "counter-straight",
+    "path": "models/cafe-counter-straight.glb",
+    "triangles": 2770,
+    "texture_size": 512,
+    "bytes": 147036,
+    "sha256": "b5008d9a848b5c28b3c2a711050b0a89d09ebe70f7501a44c639a1d76dd74661",
+    "source_sha256": "baed6a7947f1edfd99056c905a8f464ff48d65768f2cbe954ec953de90d834de",
+    "provider": "Tripo3D",
+    "preparation": "Position seams welded at 1e-6 m before reduction; face normals recalculated; no new boundary edges.",
+    "topology": [
+      {
+        "object": "tripo_node_f271c655-d070-4971-b9d9-7197db166c41",
+        "boundary_edges_before": 4,
+        "boundary_edges_after": 4,
+        "boundary_length_before": 0.03262808278668672,
+        "boundary_length_after": 0.03262808278668672
+      }
+    ],
+    "task_id": "f271c655-d070-4971-b9d9-7197db166c41",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "counter-straight",
+      "height": 0.9,
+      "prompt": "Use case: stylized-concept. One straight modular cafe counter cabinet for a warm Scandinavian dollhouse 3D game. Rectangular block 1.2m wide 0.65m deep 0.9m tall, forest green #243C32 solid cabinet with two simple recessed front panels, thick honey oak #B98250 countertop with subtle grain and softly beveled front edge, recessed dark plinth. Flat vertical sides and countertop ends flush with cabinet sides for joining identical modules seamlessly; no side overhang, backsplash, handles or ornaments. Stylized simple chunky clean shapes, matte materials. Full isolated object centered with margins, elevated front three-quarter view, neutral diffuse light, white background. Nothing on top, no props, text, labels or collage. Reference for image-to-3D.",
+      "source": "C:/Users/EJOHDAV/.codex/generated_images/01a179e7-bc31-74f0-b9e7-a74c6fa16f4a/exec-97c86e42-2849-4562-afbf-75349dd50679.png",
+      "provider": "built-in ImageGen",
+      "reference_sources": [
+        "design.md",
+        "docs/assets.md"
+      ],
+      "reference_visual_review": "Inspected generated pixels: complete isolated subject, coherent silhouette, palette and parts acceptable for Tripo draft."
+    },
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  },
+  {
+    "name": "counter-corner",
+    "path": "models/cafe-counter-corner.glb",
+    "triangles": 2469,
+    "texture_size": 512,
+    "bytes": 171912,
+    "sha256": "eefbec19b59b8ac3884645d2ee9461dff766b3b3741409e07d65cc33ec4d68bd",
+    "source_sha256": "3b0dee9c97293532484547aea47dcc2a6208067de9914ed47c75e5ca1bd14821",
+    "provider": "Tripo3D",
+    "preparation": "Position seams welded at 1e-6 m before reduction; face normals recalculated; no new boundary edges.",
+    "topology": [
+      {
+        "object": "tripo_node_dbf6c96c-b991-4e98-b33c-ab3877f04793",
+        "boundary_edges_before": 15,
+        "boundary_edges_after": 15,
+        "boundary_length_before": 0.08227231650380418,
+        "boundary_length_after": 0.08227231650380418
+      }
+    ],
+    "task_id": "dbf6c96c-b991-4e98-b33c-ab3877f04793",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "counter-corner",
+      "height": 0.9,
+      "prompt": "Use case: stylized-concept. One isolated modular CORNER cafe counter connector cabinet for a warm Scandinavian dollhouse 3D game. Compact square footprint 0.65m by 0.65m, height 0.9m, flat square honey oak #B98250 thick worktop, forest green #243C32 cabinet base, recessed dark plinth. Two adjacent outward-facing sides have simple recessed rectangular panels; other two sides are flush joining faces for straight counter modules to attach at a right angle. Top ends flush with sides, no overhang, no backsplash, no handles. Subtle wood grain, matte softly beveled simple chunky shapes. Full object centered with margin in elevated three-quarter view showing both paneled sides and square top. Neutral diffuse lighting on white background. Empty top, no props, labels, text, collage or floor platform. Reference for image-to-3D.",
+      "source": "C:/Users/EJOHDAV/.codex/generated_images/01a179e7-bc31-74f0-b9e7-a74c6fa16f4a/exec-f023ecb7-b844-444b-98bb-35468a799be3.png",
+      "provider": "built-in ImageGen",
+      "reference_sources": [
+        "design.md",
+        "docs/assets.md"
+      ],
+      "reference_visual_review": "Inspected generated pixels: complete isolated subject, coherent silhouette, palette and parts acceptable for Tripo draft."
+    },
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  },
+  {
+    "name": "table",
+    "path": "models/cafe-table.glb",
+    "triangles": 2770,
+    "texture_size": 512,
+    "bytes": 138460,
+    "sha256": "0b5505fb635332972276e72344bcd6eb39f7567097b1c57d82c20a85dc456cce",
+    "source_sha256": "4a02f271599e0d722230f6aff5a86aa96d2f6ebbfd6fc0113a01ca45d09ac614",
+    "provider": "Tripo3D",
+    "preparation": "Position seams welded at 1e-6 m before reduction; face normals recalculated; no new boundary edges.",
+    "topology": [
+      {
+        "object": "tripo_node_3556eec3-e5b4-44d5-bb5b-df925d333c88",
+        "boundary_edges_before": 0,
+        "boundary_edges_after": 0,
+        "boundary_length_before": 0,
+        "boundary_length_after": 0
+      }
+    ],
+    "task_id": "3556eec3-e5b4-44d5-bb5b-df925d333c88",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "table",
+      "height": 0.74,
+      "prompt": "Use case: stylized-concept. One isolated small round cafe table for a warm Scandinavian stylized 3D dollhouse game. Honey oak #B98250 thick circular tabletop with generously rounded rim and quiet subtle wood grain, four sturdy slightly splayed honey oak legs connected securely below top. Height 0.74m, diameter 0.75m. Simple matte stylized furniture, clean rounded forms, no intricate joinery, no decorations. Entire table and all feet visible, centered with margin, elevated three-quarter view with legs readable, neutral diffuse lighting, plain white background. No chairs, objects on table, labels, text, logos, platform or collage. Image-to-3D reference.",
+      "source": "C:/Users/EJOHDAV/.codex/generated_images/01a179e7-bc31-74f0-b9e7-a74c6fa16f4a/exec-d614e113-6793-4894-8f15-685ec2e9120e.png",
+      "provider": "built-in ImageGen",
+      "reference_sources": [
+        "design.md",
+        "docs/assets.md"
+      ],
+      "reference_visual_review": "Inspected generated pixels: complete isolated subject, coherent silhouette, palette and parts acceptable for Tripo draft."
+    },
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  },
+  {
+    "name": "chair",
+    "path": "models/cafe-chair.glb",
+    "triangles": 2769,
+    "texture_size": 512,
+    "bytes": 187164,
+    "sha256": "13b728b23144452617b6f7cf73c92b3575b3451fc6cc80650abbc9b38f7e4b08",
+    "source_sha256": "be3592cc37df9fcf1c14110db604226357c6467f65ff723f3ad3be55bcfefcb3",
+    "provider": "Tripo3D",
+    "preparation": "Position seams welded at 1e-6 m before reduction; face normals recalculated; no new boundary edges.",
+    "topology": [
+      {
+        "object": "tripo_node_04e85fe1-7be5-4b2d-aa51-7d86aaad0dec",
+        "boundary_edges_before": 2,
+        "boundary_edges_after": 2,
+        "boundary_length_before": 0.0067067493218928576,
+        "boundary_length_after": 0.0067067493218928576
+      }
+    ],
+    "task_id": "04e85fe1-7be5-4b2d-aa51-7d86aaad0dec",
+    "request": {
+      "model": "v3.1-20260211",
+      "geometry_quality": "detailed",
+      "face_limit": 50000,
+      "texture": true,
+      "pbr": true,
+      "quad": false,
+      "texture_quality": "detailed",
+      "texture_version": "v3.5-20260815",
+      "delight": false,
+      "enable_image_autofix": false
+    },
+    "reference_notes": {
+      "name": "chair",
+      "height": 0.8,
+      "prompt": "Use case: stylized-concept. One isolated Scandinavian cafe chair for a warm stylized 3D dollhouse game. Sturdy honey oak #B98250 frame, four slightly splayed legs, broad rounded curved solid wooden backrest on two rear supports, softly rounded sage green #8FA58B upholstered seat cushion. Armless, simple friendly chunky geometry, matte materials, very subtle wood grain, no fabric noise. Height 0.80m, seat height 0.45m. Clear open space under backrest and between legs. Entire chair and feet visible centered with generous margin, elevated front three-quarter view, neutral diffuse lighting, plain white background. No other furniture, props, text, logo, platform or collage. Reference for image-to-3D.",
+      "source": "C:/Users/EJOHDAV/.codex/generated_images/01a179e7-bc31-74f0-b9e7-a74c6fa16f4a/exec-6cf3e987-3f34-4f01-b591-299c8052721e.png",
+      "provider": "built-in ImageGen",
+      "reference_sources": [
+        "design.md",
+        "docs/assets.md"
+      ],
+      "reference_visual_review": "Inspected generated pixels: complete isolated subject, coherent silhouette, palette and parts acceptable for Tripo draft."
+    },
+    "rights": "Account entitlement not independently verified; integration requested by owner."
+  }
+]

@@ -1,0 +1,397 @@
+{
+  "approval": "user-requested-elevenlabs-generation-and-integration-2026-10-28",
+  "preparation": "tools/prepare-cafe-audio.cjs; Chromium MP3 decode and mono resample, DC removal, one-shot trim/fades, 300ms ambience overlap, bounded RMS/peak normalization",
+  "usageRights": "Generated with the owner-provided ElevenLabs account at their request. Account plan and distribution entitlement have not been independently verified.",
+  "listeningReview": "Not performed by the agent; headphone/speaker acceptance remains required.",
+  "assets": [
+    {
+      "id": 0,
+      "path": "audio/brew.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/brew.mp3",
+      "sourceSha256": "ac7c38889cad4f417884c062619c150262ddc778e5af48ae357b30b858f1f5c7",
+      "sha256": "45e387afdab9ae48b0c56762e77edb0f2d0c5bb621f5ecef6f8fbd0db74c3db6",
+      "bytes": 117230,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "An intimate close recording of one compact cafe espresso machine pulling a single shot: gentle pump starts promptly, mellow steady pressure hiss and small coffee drips into a ceramic cup, then pump stops and the last drips decay naturally. Warm restrained everyday sound, no shrill steam, no loud rattle, no voices, no music, no background room noise. One complete action with a clean quiet ending.",
+        "duration_seconds": 4,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:14.013685+00:00",
+      "metrics": {
+        "duration": 3.6620625,
+        "peak": 0.45,
+        "rms": 0.015878937217576636,
+        "gain": 1.9177270591839277,
+        "dcRemoved": -0.000017303091412814276,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 1,
+      "path": "audio/cup.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/cup.mp3",
+      "sourceSha256": "5049e568792a98078fd0e5fd83d49058b8ed84eaca963a0305f2e4a9a1de69fb",
+      "sha256": "80bb2600d1ab32f3a25e3c9a08a78cf35be5b724cc2d8b4e8f620fa34d575763",
+      "bytes": 22424,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One thick ceramic espresso cup gently placed on a ceramic saucer resting on an oak cafe counter. A soft tactile wooden contact and one delicate rounded porcelain clink, brief natural resonance fading fully into quiet. Single isolated close dry action, warm and satisfying, no harsh glass ringing, no extra clatters, no voices, music or ambience.",
+        "duration_seconds": 1.2,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:34.741453+00:00",
+      "metrics": {
+        "duration": 0.699375,
+        "peak": 0.45,
+        "rms": 0.030624306834438297,
+        "gain": 0.8603223046196753,
+        "dcRemoved": 0.000013237776899016987,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 2,
+      "path": "audio/door.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/door.mp3",
+      "sourceSha256": "2757c00b83c4f87e9ce5b09a4799046684cb2d3928500e20f3251408b8ac9553",
+      "sha256": "64352a1cba236e23106b4ab9f65fa159cc369964f24e1a3a86620dd864b0f771",
+      "bytes": 64044,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One small brass bell above a neighborhood cafe door gives a quiet welcoming double tinkle as the door opens, then its warm gentle resonance fades completely. Intimate soft natural foley suitable for frequent guest arrivals. No loud alarm, no door slam, no footsteps, voices, music or background noise.",
+        "duration_seconds": 2,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:40.446980+00:00",
+      "metrics": {
+        "duration": 2,
+        "peak": 0.34581763345181776,
+        "rms": 0.09,
+        "gain": 0.8587830503298147,
+        "dcRemoved": -0.0004925518122339803,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 3,
+      "path": "audio/ambience.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/ambience.mp3",
+      "sourceSha256": "c60836719e5997ccbeb0dcc81b347b9e08df13c305483d40e76b508039e9acaf",
+      "sha256": "b325a9ed91d2e83b5a036a1bf1234e53ad1de1ecf2896ddb7565a53382b160b6",
+      "bytes": 630444,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "Seamless quiet morning room tone in a small Scandinavian cafe, heard from a seated distance. Soft diffuse unintelligible conversational murmur, low warm ventilation hum, occasional distant muted crockery. Stable subdued level and room character. No foreground events, recognizable words, distinct voice, music, bells, grinder, espresso bursts or traffic. No intro or ending; calm background texture leaving room for gameplay effects.",
+        "duration_seconds": 20,
+        "loop": true,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:33:34.368629+00:00",
+      "metrics": {
+        "duration": 19.7,
+        "peak": 0.13596972067690768,
+        "rms": 0.035,
+        "gain": 3.223216172442491,
+        "dcRemoved": -0.0002550553530875618,
+        "loop": true,
+        "loopCrossfadeSeconds": 0.3,
+        "loopBoundaryDelta": 0.00004811971936771006
+      }
+    },
+    {
+      "id": 4,
+      "path": "audio/grinder.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/grinder.mp3",
+      "sourceSha256": "2ea9682e5f5df997e219db8194582147cdf2f6c3d01d207dc9145ec6a2f16c53",
+      "sha256": "add562774c3c6fe4080222d588b8c2ba35d0ed0cda58124912f2347174fd1308",
+      "bytes": 79404,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One short coffee grinder burst in a cozy small cafe, starting promptly with a soft mechanical click, a rounded low electric motor whirr and gentle coffee bean crunch, then stopping with a tiny settling rattle. Close dry isolated recording, subdued treble and natural quiet tail. No voices, music, room ambience or repeated bursts.",
+        "duration_seconds": 2.5,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:20.833943+00:00",
+      "metrics": {
+        "duration": 2.48,
+        "peak": 0.45,
+        "rms": 0.01659811011344268,
+        "gain": 2.947561304251707,
+        "dcRemoved": -0.00005146098459296159,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 5,
+      "path": "audio/steam.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/steam.mp3",
+      "sourceSha256": "3e6cfadb556206929c8902b71afc761960815326391c8cc3468a16b26d0c9dd8",
+      "sha256": "e3a3eed55153cf07560224607351859d99cfe94fffdd2cef4c5d03dcb73e9c02",
+      "bytes": 96044,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "A barista steaming milk in a small stainless steel pitcher: one controlled soft steam wand release, a smooth warm foamy rolling hiss with a little liquid swirl, easing to a clean stop. Intimate dry cafe foley, modest dynamics, no piercing squeal, no explosive pressure release, no voices, music or background ambience.",
+        "duration_seconds": 3,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:28.435046+00:00",
+      "metrics": {
+        "duration": 3,
+        "peak": 0.45000000000000007,
+        "rms": 0.08805691884962635,
+        "gain": 2.877561179523237,
+        "dcRemoved": -0.00015918261673814805,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 6,
+      "path": "audio/payment.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/payment.mp3",
+      "sourceSha256": "5418ef61f36793d590722b6950f73b74038b3a73d24cbe2e7b8bc6aecbea9dea",
+      "sha256": "d441f46be4b12e7c8e6e79dd6b36e7f5e0abe31e54f357dfb6f860eb3476bf18",
+      "bytes": 38444,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "A restrained cafe payment reward: two small brass coins land gently together in a wooden change tray, with a soft rounded coin clink and a short pleasing natural ring. One compact tactile confirmation, dry close recording, clean quiet decay. No cash register alarm, synthetic jingle, music, speech or ambience.",
+        "duration_seconds": 1.2,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:45.510691+00:00",
+      "metrics": {
+        "duration": 1.2,
+        "peak": 0.45,
+        "rms": 0.02501503435427528,
+        "gain": 3.0614764860088375,
+        "dcRemoved": 0.000027904185052101127,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 7,
+      "path": "audio/ready.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/ready.mp3",
+      "sourceSha256": "14a337d7b861697f64cd12268a7c9fa46a18610b087d6f22ed7d2646973d23a1",
+      "sha256": "681d4aa110fb1e5454f9347cd04f0f67c8c2e10ee907de51722845d62122aa70",
+      "bytes": 47404,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One gentle single tap on a small warm brass cafe service bell, softly struck with a fingertip. A rounded clear delicate ding with a short smooth natural decay to silence, a quiet drink-ready cue comfortable to hear repeatedly. No shrill ringing, repeated taps, musical phrase, voices or room noise.",
+        "duration_seconds": 1.5,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:52.028860+00:00",
+      "metrics": {
+        "duration": 1.48,
+        "peak": 0.45,
+        "rms": 0.04967539093624359,
+        "gain": 3.1254978893385594,
+        "dcRemoved": -0.00002284072741557967,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 8,
+      "path": "audio/pour.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/pour.mp3",
+      "sourceSha256": "1f64d3d8387b0d605984aaa5f592e66d55d56972e4322ced08bbb99f9259840d",
+      "sha256": "db5ee073c9721443119ef151b188a2d29587d6171dc376e265390cd7ac3664ac",
+      "bytes": 79404,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One small serving of hot water poured from a gooseneck kettle into a thick ceramic tea cup: a soft controlled liquid stream, subtle increasing cup resonance, two final droplets and a clean stop. Close dry intimate foley, gentle dynamics. No kettle whistle, steam blast, voices, music or room ambience.",
+        "duration_seconds": 2.5,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:32:58.488578+00:00",
+      "metrics": {
+        "duration": 2.48,
+        "peak": 0.45,
+        "rms": 0.08591289071459463,
+        "gain": 51.75012984019685,
+        "dcRemoved": -0.00004386353340295575,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 9,
+      "path": "audio/pastry.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/pastry.mp3",
+      "sourceSha256": "438c536a1a2961b8ec8c11d2e37964d18bf562634e576532c82015e74229d4f7",
+      "sha256": "5e6b160055465cd73c32efa82c7a93f5e4c65db256454faa302010f2784d3c2c",
+      "bytes": 46770,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One fresh croissant gently transferred in a small sheet of bakery paper onto a ceramic plate on a wood counter. A brief delicate dry paper rustle, a very soft pastry contact and a subtle plate tick, finishing in silence. Close isolated warm cafe foley. No chewing, loud crunch, repeated handling, voices, music or room ambience.",
+        "duration_seconds": 1.5,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:33:06.366176+00:00",
+      "metrics": {
+        "duration": 1.4601875,
+        "peak": 0.45,
+        "rms": 0.019845048354844096,
+        "gain": 1.7607994437086805,
+        "dcRemoved": -0.00013730626517895187,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 10,
+      "path": "audio/clean.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/clean.mp3",
+      "sourceSha256": "6b76e379c01b16507fd8a722b458769df0d8ef5e1c7b3d1b72c251825d0b8acc",
+      "sha256": "1b38a270ee20c98153bbf79ef8084d15fbe7d526fb9aefca8ec85570f36d2b4d",
+      "bytes": 79404,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One short cafe table cleaning action: a soft slightly damp cotton cloth makes two gentle overlapping swipes across a smooth oak table and lifts away. Close dry tactile foley, quiet rounded friction and subtle fabric movement, clean beginning and ending. No squeaks, spray bottle, exaggerated scrubbing, voices, music or background noise.",
+        "duration_seconds": 2.5,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:33:13.505564+00:00",
+      "metrics": {
+        "duration": 2.48,
+        "peak": 0.45,
+        "rms": 0.0399487676140921,
+        "gain": 13.50783874499925,
+        "dcRemoved": -0.000028603786699710466,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 11,
+      "path": "audio/ui.wav",
+      "source": "assets/generated/elevenlabs-cafe-20261028/ui.mp3",
+      "sourceSha256": "d369d79253e2f46dbc9c449a0d58e07236519f2018aae637e2ffb605fe9b5bd6",
+      "sha256": "0dcc0c79bb4776fcadf3f4fe39c220e19d7f6925e82dc3a75a3ffc689b777781",
+      "bytes": 15404,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One very soft tactile interface confirmation inspired by a fingertip tapping a small wooden cafe menu tab: a short rounded dry wooden tick with a tiny warm resonance, fading immediately to silence. Single compact sound, gentle attack, no harsh high click, no repeated taps, voices, music or background noise.",
+        "duration_seconds": 0.5,
+        "loop": false,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-28T15:33:23.004305+00:00",
+      "metrics": {
+        "duration": 0.48,
+        "peak": 0.45,
+        "rms": 0.042234860672505835,
+        "gain": 3.0834065717966674,
+        "dcRemoved": -0.0000018588184633590762,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    },
+    {
+      "id": 12,
+      "path": "audio/appeal.wav",
+      "source": "assets/generated/appeal-chime/appeal.mp3",
+      "sourceSha256": "fc69b6bfc239b17326c4a98a4626dbb509bca7a0e3d848fca4a9930a0d113b8f",
+      "sha256": "067373d37eb69c3076c96b3f1b40e5cf6a2f4cf2b9b7c154fd6cd9817231b83d",
+      "bytes": 38444,
+      "sampleRate": 16000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "provider": "elevenlabs",
+      "request": {
+        "text": "One cozy cafe game reward chime: three delicate ascending warm porcelain and celesta bell notes, then a light shimmering sparkle tail. Cheerful, intimate UI confirmation with immediate gentle attack, clear rising pitch, rounded tone and soft decay to silence. No speech, music bed, ambience, whoosh, bass impact or harsh highs.",
+        "duration_seconds": 1.2,
+        "model_id": "eleven_text_to_sound_v2"
+      },
+      "requestId": null,
+      "generatedAt": "2026-10-29T17:23:46.433283+00:00",
+      "metrics": {
+        "duration": 1.2,
+        "peak": 0.4,
+        "rms": 0.06507612093369561,
+        "gain": 1.6659442074256048,
+        "dcRemoved": -0.000022176725246640198,
+        "loop": false,
+        "loopCrossfadeSeconds": 0,
+        "loopBoundaryDelta": null
+      }
+    }
+  ]
+}

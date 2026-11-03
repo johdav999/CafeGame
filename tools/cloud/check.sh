@@ -4,8 +4,9 @@ repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$repo_dir"
 bash tools/cloud/run.sh npm test
 mkdir -p build/cloud
-g++ -std=c++20 -Wall -Wextra -Werror -Isrc tests/simulation_test.cpp -o build/cloud/simulation-test
-build/cloud/simulation-test
+cmake -S tests -B build/cloud/simulation -G Ninja -DCMAKE_BUILD_TYPE=Release
+cmake --build build/cloud/simulation --parallel 2
+ctest --test-dir build/cloud/simulation --output-on-failure
 bash tools/cloud/run.sh cmake --build build/cloud/browser --target cafe_game -j "${CAFE_BUILD_JOBS:-2}"
 export CAFE_SITE_DIR="$repo_dir/build/cloud/browser/site"
 export PORT="${CAFE_TEST_PORT:-4183}"
@@ -21,3 +22,15 @@ for attempt in {1..30}; do
   sleep 1
 done
 bash tools/cloud/run.sh node tools/browser-smoke.cjs
+bash tools/cloud/run.sh node tools/demand-smoke.cjs
+bash tools/cloud/run.sh node tools/authoring-smoke.cjs
+bash tools/cloud/run.sh node tools/compatibility-smoke.cjs
+bash tools/cloud/run.sh node tools/menu-smoke.cjs
+bash tools/cloud/run.sh node tools/staff-smoke.cjs
+build/cloud/simulation/cafe_campaign build/evidence > build/evidence/campaign-cloud.json
+bash tools/cloud/run.sh node tools/campaign-smoke.cjs
+bash tools/cloud/run.sh node tools/equipment-smoke.cjs
+bash tools/cloud/run.sh node tools/presentation-smoke.cjs
+bash tools/cloud/run.sh node tools/presentation-assets-smoke.cjs
+bash tools/cloud/run.sh node tools/service-ui-smoke.cjs
+node tools/stress.mjs --host build/cloud/simulation/cafe_stress --seconds 21600 --seeds 123,456 --scale 1024 --output build/evidence/stress-cloud.json

@@ -1,0 +1,313 @@
+{
+  "provider": "OpenAI built-in ImageGen",
+  "date": "2026-10-29",
+  "processing": "Separate generated badge per achievement. Proportional Lanczos resize to 384px maximum, WebP quality 93; generated alpha preserved. No painted or procedural artwork.",
+  "files": [
+    {
+      "id": 0,
+      "name": "opening-doors",
+      "motif": "an open honey-oak cafe doorway with a tiny sunrise shining through",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-131de0e0-03b6-4639-9b5e-0c771aa5b9bf.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: an open honey-oak cafe doorway with a tiny sunrise shining through. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Opening your doors",
+      "path": "ui/achievements/badge-0.webp",
+      "master": "assets/generated/achievements-20261029/opening-doors.png",
+      "source_sha256": "d849d5b54dcbe43d650b7f7ae6180b5460635c831170dc9bd8738cbbf00e55a0",
+      "sha256": "8a8c955d4a909da0c791f8ec997c16804eff4f34733e4ae457ea8471c29b9cf7",
+      "bytes": 41822,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 1,
+      "name": "week-mornings",
+      "motif": "a blank ivory calendar page with a small rising brass sun and one coffee cup",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-3455c149-b2d0-44d4-9c6c-478858c0b6bd.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a blank ivory calendar page with a small rising brass sun and one coffee cup. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "A week of mornings",
+      "path": "ui/achievements/badge-1.webp",
+      "master": "assets/generated/achievements-20261029/week-mornings.png",
+      "source_sha256": "8853ea0a195e66f8c5244f8cbf0ea0300e7a7644fe1bfca8178b866510d6b471",
+      "sha256": "b4037d61d373be8d55288e5dd6bad0ded1c92abc4883e74ff779b4e58b2a041b",
+      "bytes": 39094,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 2,
+      "name": "neighborhood",
+      "motif": "three welcoming miniature cafe houses nestled together",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-e610e124-d1aa-458a-9a1b-304049535e90.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: three welcoming miniature cafe houses nestled together. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Part of the neighborhood",
+      "path": "ui/achievements/badge-2.webp",
+      "master": "assets/generated/achievements-20261029/neighborhood.png",
+      "source_sha256": "af76e301df66526bf5baa47899ad10186c13329a35ff9f6d5c631e2950f02abf",
+      "sha256": "34eeecaa90820e18ced6ff4f47a54822b76206bee8129e59592bc29b03974a50",
+      "bytes": 48846,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 3,
+      "name": "getting-rhythm",
+      "motif": "an ivory order clipboard with one bold forest-green check mark",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-0d0efeed-55b7-410b-a2c0-8a4b9a960739.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: an ivory order clipboard with one bold forest-green check mark. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Getting the hang of it",
+      "path": "ui/achievements/badge-3.webp",
+      "master": "assets/generated/achievements-20261029/getting-rhythm.png",
+      "source_sha256": "a995bc1ab910db6c3adb1eefe9a56e098e1dc23acc2dd63af90706d880cbf3d2",
+      "sha256": "8a55d6861848b0d837f1cf08d8d75421305f4d3589d05ce326a963dec2007111",
+      "bytes": 31030,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 4,
+      "name": "hundred-welcomes",
+      "motif": "a small serving tray carrying three ivory coffee cups, embraced by laurel leaves",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-001c3a56-3834-43c7-a2e3-1b5a83ece91b.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a small serving tray carrying three ivory coffee cups, embraced by laurel leaves. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "A hundred welcomes",
+      "path": "ui/achievements/badge-4.webp",
+      "master": "assets/generated/achievements-20261029/hundred-welcomes.png",
+      "source_sha256": "2ab4baba48acb7f89ec6a649206faba89a469b5b204aba44194e009665c694fe",
+      "sha256": "98f4243bea6c05e4627ae6fff898264456d2461e56ebe490e6c7bc6773095c30",
+      "bytes": 43300,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 5,
+      "name": "busy-cafe",
+      "motif": "three steaming ivory coffee cups beneath a small warm brass crown",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-6a657aa8-13f4-43c3-a81f-de05063972fc.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: three steaming ivory coffee cups beneath a small warm brass crown. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "The busy little cafe",
+      "path": "ui/achievements/badge-5.webp",
+      "master": "assets/generated/achievements-20261029/busy-cafe.png",
+      "source_sha256": "42cb71fe59deae4d4a7d8cc8c7f4813530d0f4d86f2e508d6121d4f2c5360206",
+      "sha256": "0ff523eb2c7cc5d5718edb83e732dbd63e0a84603530d7b29c4dfe55be937644",
+      "bytes": 42016,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 6,
+      "name": "better-together",
+      "motif": "one ivory coffee cup and a golden croissant together on a serving tray",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-1d14d4b4-4fd5-4bd7-a716-cefd5797b88a.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: one ivory coffee cup and a golden croissant together on a serving tray. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Better together",
+      "path": "ui/achievements/badge-6.webp",
+      "master": "assets/generated/achievements-20261029/better-together.png",
+      "source_sha256": "0b81efb5c1081ad07fb3201455f1a96e0d050a3e16497a9ccf7f133c1958d377",
+      "sha256": "063bcde88f82db4da667d584f8f3b85e30c99b1e9326edbd357417d23c476130",
+      "bytes": 39454,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 7,
+      "name": "espresso",
+      "motif": "one clear espresso demitasse with dark coffee, ivory saucer and two chunky coffee beans",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-fcc22230-25bc-41df-a055-2fd1d06d724c.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: one clear espresso demitasse with dark coffee, ivory saucer and two chunky coffee beans. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Espresso yourself",
+      "path": "ui/achievements/badge-7.webp",
+      "master": "assets/generated/achievements-20261029/espresso.png",
+      "source_sha256": "41834a1d5914846dac49c17282821c96a0b22d5d2da636f0d22f6b62c85447c9",
+      "sha256": "eb26c5ef0409a46092ad93276efc16c20f43bba9d2c82c09852485869bfa19f5",
+      "bytes": 40854,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 8,
+      "name": "breakfast",
+      "motif": "a small honey-oak basket holding three golden croissants",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-b1aa52ef-fca3-4b02-b125-7c0f1171e393.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a small honey-oak basket holding three golden croissants. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Breakfast favorite",
+      "path": "ui/achievements/badge-8.webp",
+      "master": "assets/generated/achievements-20261029/breakfast.png",
+      "source_sha256": "3bd4f9f26fc5f5e20e425cff60bad636225fb0902dcba7e5e9a8fbe7b4b15f12",
+      "sha256": "837965f1eb6822c8a03eb217a992b0b1aac8320cd64d1af87868966dfda004ce",
+      "bytes": 43032,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 9,
+      "name": "menu-variety",
+      "motif": "an open forest-green menu book with blank ivory pages and five small brass stars",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-e7dcc6fc-31ca-4147-a92d-5e18401baf83.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: an open forest-green menu book with blank ivory pages and five small brass stars. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Something for everyone",
+      "path": "ui/achievements/badge-9.webp",
+      "master": "assets/generated/achievements-20261029/menu-variety.png",
+      "source_sha256": "ebc4b1ed61ab440e812f325b4686061c7e2d485571fa5d0a063e01067bf60b5b",
+      "sha256": "2a943da72977fa411fbe65106faf52d9574331ed812f2d5d806ae809e9278bd7",
+      "bytes": 37738,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 10,
+      "name": "happy-visits",
+      "motif": "a large warm terracotta heart with a small bright brass star and gentle celebratory rays",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-5a5a4b2f-5a1b-47f6-b88d-ca5053e740bd.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a large warm terracotta heart with a small bright brass star and gentle celebratory rays. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "A good morning, indeed",
+      "path": "ui/achievements/badge-10.webp",
+      "master": "assets/generated/achievements-20261029/happy-visits.png",
+      "source_sha256": "af78c1301a38d1981b6fc476f6a34c4ae6149cc9b25179f13d5bdf4aca227005",
+      "sha256": "f831ad92e980a4696d41c77b5dc442745abc6f83a04f930413d7edc676e8281f",
+      "bytes": 38408,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 11,
+      "name": "familiar-faces",
+      "motif": "three friendly simple ivory customer bust silhouettes grouped beneath one small terracotta heart",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-c93b41d3-47f2-4d26-b81a-ceb9862d7f01.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: three friendly simple ivory customer bust silhouettes grouped beneath one small terracotta heart. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Familiar faces",
+      "path": "ui/achievements/badge-11.webp",
+      "master": "assets/generated/achievements-20261029/familiar-faces.png",
+      "source_sha256": "dae81601e8866b8f3d6cebf23605aa1ebe85224c8fb8e8f5cc1e6cb521a84415",
+      "sha256": "d5a0a9419dce9a11f92ca25999756b0430510405feaa48f1e4e73c8974e4fe3d",
+      "bytes": 33680,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 12,
+      "name": "profitable",
+      "motif": "a neat stack of chunky brass coins with one bold upward brass arrow",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-31462cc5-d4e5-44d6-b3ac-7076e7f52369.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a neat stack of chunky brass coins with one bold upward brass arrow. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Finding your feet",
+      "path": "ui/achievements/badge-12.webp",
+      "master": "assets/generated/achievements-20261029/profitable.png",
+      "source_sha256": "3c2b481b1bbfd0c67314c8d9c5fff4956b480e8ef8959ff1989ff2d527bcdbdc",
+      "sha256": "6e8ea79b3d3205a46da1310621486973044d2fcefe78b08c12af3cf4cc217c16",
+      "bytes": 35858,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 13,
+      "name": "waste-free",
+      "motif": "one ivory reusable coffee cup cradled by two large green leaves and a single circular brass arrow",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-8e4ddd73-8f41-4965-9c5d-f0ded766e6b4.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: one ivory reusable coffee cup cradled by two large green leaves and a single circular brass arrow. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Waste not",
+      "path": "ui/achievements/badge-13.webp",
+      "master": "assets/generated/achievements-20261029/waste-free.png",
+      "source_sha256": "d842a9d0b653992f104fdee24d3ba1a1f200619f4192a1957cc2645f6e1b6459",
+      "sha256": "38bdf6b13e92dda7bc5a79bc178c3965c940305550c80b8a85e5fe4ccce43a61",
+      "bytes": 37542,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 14,
+      "name": "helping-hand",
+      "motif": "two miniature forest-green barista aprons side by side with ivory straps",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-e54dfa61-c5cd-428e-98cb-536f319fd322.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: two miniature forest-green barista aprons side by side with ivory straps. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "A helping hand",
+      "path": "ui/achievements/badge-14.webp",
+      "master": "assets/generated/achievements-20261029/helping-hand.png",
+      "source_sha256": "0a8282a9507db30ef5035267f9ba08e2570fb8b79213b9b2b437e4913003837e",
+      "sha256": "504050a6b563f8558052a50e709f20daf597d7de6336e4ff3f6cd905c2cb45b5",
+      "bytes": 38446,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 15,
+      "name": "make-yourself-home",
+      "motif": "a rounded sage potted plant beside one small glowing brass floor lamp",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-9d56f717-1671-4cc4-8553-871e7a7487aa.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a rounded sage potted plant beside one small glowing brass floor lamp. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Make yourself at home",
+      "path": "ui/achievements/badge-15.webp",
+      "master": "assets/generated/achievements-20261029/make-yourself-home.png",
+      "source_sha256": "d56c218532f16ad90b7049fd89b18127783f05c00c0a02f0aaa52fd8f9d1f690",
+      "sha256": "d917a043a6c83c51ba8cab7f2180019d4b2f6f755345f615e24444f12b530aee",
+      "bytes": 35612,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 16,
+      "name": "room-company",
+      "motif": "four tiny round honey-oak cafe tables seen from above, neatly arranged two by two",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-3f70e280-6bea-4047-980a-be793d0648c8.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: four tiny round honey-oak cafe tables seen from above, neatly arranged two by two. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Room for company",
+      "path": "ui/achievements/badge-16.webp",
+      "master": "assets/generated/achievements-20261029/room-company.png",
+      "source_sha256": "cb7ac7be50eb32c4b0418c341ba709b41fc679f96601bfa0e2b792791b7b0784",
+      "sha256": "88c30234747034d79ae968e9724266b25602fee7edccced379d85f5472139f01",
+      "bytes": 36580,
+      "dimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": 17,
+      "name": "tools-trade",
+      "motif": "a compact forest-green espresso machine with one small brass wrench and gear",
+      "source": "C:\\Users\\EJOHDAV\\.codex\\generated_images\\01a17cee-62c7-7f23-8723-25c7404f1691\\exec-9bcba1df-7a89-4a51-98d5-d5d7142929de.png",
+      "prompt": "Use case: stylized-concept. Asset type: one finished transparent achievement badge icon for a premium warm Scandinavian cafe game. A softly sculpted circular forest-green enamel medallion, restrained raised honey-brass rim, two short forest-green ribbon tails beneath, one large clear central motif. Central motif: a compact forest-green espresso machine with one small brass wrench and gear. Consistent centered frontal three-quarter miniature view, softly painted tactile game art, matte ivory #F3E9D2, forest #243C32, honey oak, sage and warm brass, gentle upper-left highlights. The badge including ribbon fills about 84 percent of a square canvas, complete with clean generous transparent margin. Strong uncluttered silhouette readable at 48 pixels. Only ONE badge, no border frame around the canvas, no surrounding props, no scenic background, no written text, letters, numbers, logos or watermark. Actual transparent alpha background and clean crisp edges.",
+      "goalName": "Tools of the trade",
+      "path": "ui/achievements/badge-17.webp",
+      "master": "assets/generated/achievements-20261029/tools-trade.png",
+      "source_sha256": "79b1fb971099a2b68a97332dbebae2e9a864ea6bef3ef4edd4c25c5e499de679",
+      "sha256": "caae852f91b50c8c365ebfee0b4dfcff54bc6bff726523274a14e6d3ef161ac5",
+      "bytes": 40596,
+      "dimensions": [
+        384,
+        384
+      ]
+    }
+  ]
+}

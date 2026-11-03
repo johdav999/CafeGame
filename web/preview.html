@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CafeGame · iPhone 16 preview</title>
+  <link rel="stylesheet" href="preview.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <header>
+    <div><h1>iPhone 16 · Landscape preview</h1><p>852 × 393 CSS pixels · PC layout preview</p></div>
+    <label>Zoom <select id="preview-zoom"><option value="fit">Fit window</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select></label>
+    <label><input id="preview-safe" type="checkbox" checked> Simulate safe area</label>
+    <button id="preview-reload">Reload game</button>
+    <a id="preview-exit" href="./">Exit preview</a>
+  </header>
+  <main id="preview-stage"><div id="preview-space"><iframe id="preview-game" title="CafeGame at iPhone 16 landscape size" allow="autoplay"></iframe></div></main>
+  <footer>Mouse controls remain available. Safe areas approximate a landscape phone with browser bars hidden. This does not emulate Safari, touch gestures or iPhone GPU performance.</footer>
+</body>
+</html>

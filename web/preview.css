@@ -1,0 +1,15 @@
+* { box-sizing:border-box; }
+body { margin:0; height:100dvh; display:grid; grid-template-rows:auto minmax(0,1fr) auto; background:#243c32; color:#f3e9d2; font:14px system-ui,sans-serif; }
+header { display:flex; align-items:center; flex-wrap:wrap; gap:16px; padding:16px 24px; background:#f3e9d2; color:#302b25; }
+header>div { margin-right:auto; }
+h1 { margin:0 0 4px; font:22px Georgia,serif; }
+p { margin:0; }
+label { display:flex; align-items:center; gap:8px; }
+select,button,a { font:inherit; color:inherit; }
+select,button { min-height:44px; padding:8px 12px; border:1px solid #8fa58b; border-radius:8px; background:#f3e9d2; }
+button,a,select,input { cursor:pointer; }
+:focus-visible { outline:3px solid #b98250; outline-offset:3px; }
+#preview-stage { overflow:auto; padding:24px; display:grid; min-width:0; min-height:0; }
+#preview-space { position:relative; margin:auto; flex-shrink:0; }
+#preview-game { display:block; position:absolute; top:0; left:0; width:852px; height:393px; border:0; transform-origin:top left; background:#d4c9b4; }
+footer { padding:12px 24px; line-height:1.5; }
